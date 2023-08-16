@@ -100,9 +100,10 @@ body{
          padding:0 20px;
           span{
           color: #fff;
+          display: block;
         &.num {
           display: inline-block;
-          font-size: 80px;
+          font-size: 100px;
           font-family: 'NanumBarunGothic';
           font-weight: 700;
           justify-self: center;
@@ -115,6 +116,7 @@ body{
             -webkit-text-fill-color: rgb(255, 255, 255);
   -webkit-text-stroke:1px rgba(255, 255, 255, 0);
   transition: .3s;
+            transform: translate(-10px, 40px);
           }
         }
 }
