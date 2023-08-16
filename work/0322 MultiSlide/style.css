@@ -1,0 +1,82 @@
+@import url(/reset.css);
+
+img {
+  vertical-align: top;
+}
+.inner {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  height: 90px;
+  align-items: center;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  height: 90px;
+  border-bottom: 1px solid #000;
+}
+.wrap {
+  position: relative;
+  top: 90px;
+  display: flex;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+.scene {
+  height: 100%;
+  width: 50%;
+}
+.leftArea {
+  border-right: 1px solid #000;
+}
+
+.menu img {
+  width: 200px;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.VslideContainer {
+  height: 100%;
+}
+.VslideContainer .slideWrap {
+  height: 100%;
+}
+.VslideContainer .slideWrap .slide {
+  height: 100%;
+  padding: 5rem;
+}
+.VslideContainer .desc ul li {
+  display: none;
+}
+.VslideContainer .desc ul li p {
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.VslideContainer .desc ul li.on {
+  display: block;
+}
+.VslideContainer h2 {
+  font-size: 30px;;
+  border-bottom: 3px double #000;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+.HslideContainer{overflow: hidden;}
+.HslideContainer .slide img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.HslideContainer .slideWrap{width: 300%;display: flex;}
+.HslideContainer  .slide{width: 33.3333%;}
+
+a.arrow{position: fixed;top:50%;
+transform: translateY(-50%);}
+a.prev{left:10px}
+a.next{right:10px}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <section>
+        <article class="on">
+            <h2>커피 플로트</h2>
+            <img src="./img/11.png" alt="">
+        </article>
+        <article>
+            <h2>수제 밀크 티라미수</h2>
+            <img src="./img/22.png" alt="">
+        </article>
+         <article>
+            <h2>백미당 라떼</h2>
+            <img src="./img/33.png" alt="">
+        </article>
+        <article>
+            <h2>백미당 우유소프트 아이스크림</h2>
+            <img src="./img/44.png" alt="">
+        </article>
+       
+        <article>
+            <h2>말차초코 아이스크림</h2>
+            <img src="./img/55.png" alt="">
+        </article>
+    </section>
+    <h1>0</h1>
+    <ul class="scrollNav">
+        <li class="on">커피 플로트</li>
+        <li>수제 밀크 티라미수</li>
+        <li>백미당 라떼</li>
+        <li>우유소프트</li>
+        <li>말차초코</li>
+    </ul>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+
+
+$('.scrollNav li').on('click',function(){
+    let idx=$(this).index()
+    $('html').stop().animate({'scrollTop':5000*idx},1500)
+})
+
+
+
+$(window).on('scroll',function(){
+    let scrTop=$(this).scrollTop()
+    $('h1').text(scrTop)
+
+   
+    $('section article').eq(0).css('transform','translateZ('+scrTop+'px)')
+    $('section article').eq(1).css('transform','translateZ('+(-5000+scrTop)+'px)')
+    $('section article').eq(2).css('transform','translateZ('+(-10000+scrTop)+'px)')
+    $('section article').eq(3).css('transform','translateZ('+(-15000+scrTop)+'px)')
+    $('section article').eq(4).css('transform','translateZ('+(-20000+scrTop)+'px)')
+
+//    if(scrTop>=0 && scrTop<5000){
+//     $('.scrollNav li').removeClass('on')
+//     $('.scrollNav li').eq(0).addClass('on')
+//     $('article').removeClass('on')
+//     $('article').eq(0).addClass('on')
+// }
+// if(scrTop>=5000 && scrTop<10000){
+//     $('.scrollNav li').removeClass('on')
+//     $('.scrollNav li').eq(1).addClass('on')
+//     $('article').removeClass('on')
+//     $('article').eq(1).addClass('on')
+// }
+// if(scrTop>=10000 && scrTop<15000){
+//     $('.scrollNav li').removeClass('on')
+//     $('.scrollNav li').eq(2).addClass('on')
+//     $('article').removeClass('on')
+//     $('article').eq(2).addClass('on')
+// }
+// if(scrTop>=15000 && scrTop<20000){
+//     $('.scrollNav li').removeClass('on')
+//     $('.scrollNav li').eq(3).addClass('on')
+//     $('article').removeClass('on')
+//     $('article').eq(3).addClass('on')
+// }
+// if(scrTop>=20000 ){
+//     $('.scrollNav li').removeClass('on')
+//     $('.scrollNav li').eq(4).addClass('on')
+//     $('article').removeClass('on')
+//     $('article').eq(4).addClass('on')
+// }
+
+for(let i=0;i<5; i++){
+if(scrTop>=i*5000 && scrTop<(i+1)*5000){
+    $('.scrollNav li').removeClass('on')
+    $('.scrollNav li').eq(i).addClass('on')
+    $('article').removeClass('on')
+    $('article').eq(i).addClass('on')
+}
+
+}
+
+
+
+})
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

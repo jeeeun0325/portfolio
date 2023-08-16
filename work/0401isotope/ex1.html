@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+  max-width: 1200px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #0D8;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height: 200px; }
+
+    </style>
+</head>
+<body>
+    <h1>Isotope - masonry layout mode</h1>
+
+<div class="grid">
+  <div class="grid-item grid-item--width2">1</div>
+  <div class="grid-item grid-item--height2">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item grid-item--width2 grid-item--height2">5</div>
+  <div class="grid-item grid-item--width2">6</div>
+  <div class="grid-item grid-item--width2">7</div>
+  <div class="grid-item grid-item--height2">8</div>
+  <div class="grid-item">9</div>
+  <div class="grid-item grid-item--width2">10</div>
+  <div class="grid-item grid-item--height2">11</div>
+  <div class="grid-item">12</div>
+  <div class="grid-item">13</div>
+</div>
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+
+    
+$('.grid').isotope({
+  itemSelector: '.grid-item',
+  masonry: {
+    columnWidth: 100
+  }
+});
+
+</script>
+</body>
+</html>

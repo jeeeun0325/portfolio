@@ -1,0 +1,30 @@
+.wrap{background-color: rgba(128, 128, 128, 0.363);}
+
+header{height:200px;}
+header .inner{display: flex;}
+header .inner .header{
+    background-image:url(./img2/bg_gnb.gif) ;
+}
+
+div.header2{background-image: url(./img2/bg_gnb.gif);}
+
+main{width: 810px; display: flex; flex-wrap: wrap;}
+
+.box{width: 230px; height: 206px; display: inline-block;cursor: pointer;
+    transition: .5s; 
+margin-bottom: 10px;margin-right: 10px;}
+.box2{width:469px; height: 206px; display: inline-block;cursor: pointer;
+    transition: .5s;  
+    margin-bottom: 10px;margin-right: 10px;}
+.noticebox{width:473px; height: 205px; background-color: white; display: inline-block;}
+.con1{background-image: url(./img2/1.gif);}
+.con2{background-image: url(./img2/2.gif);}
+.con3{background-image: url(./img2/3.gif);}
+.con4{background-image: url(./img2/4.gif);}
+.con6{background-image: url(./img2/6.gif);}
+.con7{background-image: url(./img2/7.gif);}
+.con8{background-image: url(./img2/8.gif);}
+.con9{background-image: url(./img2/9.gif);}
+.con10{background-image: url(./img2/10.gif);}
+.box:hover{background-position-y: -206px;}
+.box2:hover{background-position-y: -206px;}

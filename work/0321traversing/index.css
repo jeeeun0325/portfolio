@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{font-family: 'IBMPlexSansKR-Regular'}
+header{width: 100%;background: url(./img/bg_header.gif);box-shadow: 0 0 4px rgba(0,0,0,0.5);}
+header .gnb{display: flex;align-items: center;justify-content: space-between;padding: 10px;}
+.bar{cursor: pointer;}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #00704a;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+.change .bar1 {
+    
+    transform: rotate(-45deg) translate(-9px, 7px)
+  }
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+.menu{background: #00704a;position: relative;display: none;}
+.menu ul li a{padding: 10px;display: block;color: #fff;}
+.login{display: flex; align-items: center;width: 100%;justify-content: center;padding: 20px 0 40px;position: relative;}
+.loginWrap{display: none;}
+input{height: 25px;margin-bottom: 5px;}
+button{outline: none;border:none;border-radius: 50%;background-color: #00704a;color: #fff;width: 60px;height: 60px;cursor: pointer;margin-left: 30px;}
+.member img{width: 30px;}
+.productImg{padding: 20px 0 10px 0;}
+.productBar{display: flex;align-items: center;justify-content: space-between;background-color: #00704a;height: 50px;padding: 10px;}
+.productBar a.on img{transform: rotate(180deg);transition: .5s;}
+.productBar a img{transition: .5s;}
+.productBar h3{color:#fff;}
+.productBar img{width: 20px;}
+.productSummary>h3{font-weight: 600;padding: 10px ;}
+.productItem li{text-align: center;}
+.productItem a{display: flex;align-items: center;justify-content: center;padding: 0 5px;}
+figure{text-align: center;}
+.productItem img{width: 30px;}
+.productItem ul{display: flex;flex-wrap: wrap;padding: 5px;}
+.productItem ul li{font-size: 13px;border: 1px solid #eee;}
+.productItem ul li.on{background: #f3f8ef;}
+.doughnut ul li:nth-child(1){width: 32%;border-right: none;} 
+.doughnut ul li:nth-child(2){width: 37%;border-right: none;} 
+.doughnut ul li:nth-child(3){width: 31%;} 
+.doughnut ul li:nth-child(4){width: 32%;border-top: none;border-right: none} 
+.doughnut ul li:nth-child(5){width: 37%;border-top: none;border-right: none} 
+.doughnut ul li:nth-child(6){width: 31%;border-top: none;} 
+.doughnut ul li:nth-child(7){width: 50%;border-top: none;border-right: none} 
+.doughnut ul li:nth-child(8){width: 50%;border-top: none;} 
+.doughnut ul li:nth-child(9){width: 50%;border-top: none;border-right: none} 
+.doughnut ul li:nth-child(10){width: 50%;border-top: none;} 
+.doughnut ul li:nth-child(11){width: 50%;border-top: none;border-right: none} 
+.doughnut ul li:nth-child(12){width: 50%;border-top: none;} 
+.productDetail ul{padding: 5px;}
+.productDetail ul li{display: none;padding: 20px 10px;background: url(./img/bg_cate_slide.png);background-size: cover;border-radius: 30px;;}
+.productDetail{padding: 10px 0 20px;}
+.productDetail h3{padding-bottom: 10px;font-weight: 600;color: #00704a
+;}
+.productDetail p{font-size: 15px;color: gray;line-height: 1.2;}
+.productDetail ul li.on{display: block;}
+
+.drink ul li{width: 33%;}
+.drink ul li:nth-child(1){border-right: none;} 
+.drink ul li:nth-child(2){border-right: none;} 
+.drink ul li:nth-child(4){border-right: none;border-top: none;} 
+.drink ul li:nth-child(5){border-right: none;border-top: none;} 
+.drink ul li:nth-child(6){border-top: none;} 
+.drink ul li:nth-child(7){border-right: none;border-top: none;} 
+.drink ul li:nth-child(8){border-right: none;border-top: none;} 
+.drink ul li:nth-child(9){border-top: none;} 
+.ice ul li{width: 50%;}
+.ice ul li:nth-child(1){border-right: none;} 
+.ice ul li:nth-child(3),.ice ul li:nth-child(5),.ice ul li:nth-child(7){border-right: none;border-top: none;}
+.ice ul li:nth-child(4),.ice ul li:nth-child(6),.ice ul li:nth-child(8){border-top: none;}
+div.cart.on{  background: #039161}
+div.cart{background: #00704a;text-align: center;padding:10px;color:#fff;cursor: pointer;margin: 10px ;}
+.productSummary{display: none;}
+.productDetail ul li{width: 310px;height: 120px;}
+figure img{width: 100%;}
+.container .product:nth-child(3){margin-bottom: 100px;}

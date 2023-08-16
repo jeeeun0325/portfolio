@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{background: #eee;}
+        .mobile{width: 330px; margin: 100px auto;}
+        .top{background: #FFF; height: 62px;
+        box-shadow: -15px 8px 20px -10px rgb(0 0 0 / 20%);
+        border-radius: 50px 50px 0 0;
+        border-bottom: 1px solid #eee; position: relative;}
+        .bar{background: rgba(0,0,0,0.2); width: 50px; height: 4px; border-radius: 50px;
+            position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);}
+        .bottom{height: 62px; background: #FFF; position: relative;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 0 0 50px 50px; border-top: 1px solid #eee;}
+        .bar2{background: rgba(0,0,0,0.2); width: 30px; height: 30px; border-radius: 50px;
+        position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);}
+        .bar3{border: 2px solid #FFF; width: 20px; height: 20px; border-radius: 50px;
+        position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);}
+ 
+        .content{box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;}
+        #style-4::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+        }
+
+        #style-4::-webkit-scrollbar
+        {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
+
+        #style-4::-webkit-scrollbar-thumb
+        {
+            background-color: #525252;
+            border: 2px solid #424242;
+        }
+        .scrollbar{
+           height: 566px; width: 330px;
+            background: #F5F5F5; overflow-y: scroll; overflow-x: hidden;}
+
+        iframe{width: 320px; height: 564px; min-height: 2500px; display: block;}
+    </style>
+</head>
+<body>
+    <div class="mobile">
+        <div class="top">
+
+        </div>
+        <div class="scrollbar" id="style-4">
+            <iframe src="./index.html" frameborder="0" scrolling="no" scrolling="no"></iframe>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+            if (!$.browser.webkit) {
+                $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+            }
+        });
+    </script>
+</body>
+</html>

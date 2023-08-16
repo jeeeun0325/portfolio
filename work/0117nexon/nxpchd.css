@@ -1,0 +1,17 @@
+.inner{width: 1200px;margin: auto;}
+
+header .inner{display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;}
+nav ul{width: 764px;display: flex;justify-content: space-between;}
+
+nav ul li a{display: block; height: 60px;
+background-image:url(./img2/bg_gnb.gif) ; color: transparent    ;}
+nav ul li:hover a{background-position-y: -70px;}
+nav ul li:nth-child(1) a{width: 83px;
+}
+nav ul li:nth-child(2) a{width: 104px;background-position-x: -92px;}
+nav ul li:nth-child(3) a{width: 60px;background-position-x: -205px;}
+nav ul li:nth-child(4) a{width: 78px;background-position-x: -273px;}
+

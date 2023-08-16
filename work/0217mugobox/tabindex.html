@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+.tab{width: 50%;margin: 100px auto;border: 1px solid #000;}
+.tabcontentcontainer{position: relative;height: 76px;}
+.tabcontent{display: none;padding: 15px;position: absolute}
+.tabcontent.on{display: block;}
+
+.tabmenu{border-bottom: 1px solid #555;;}
+.tabmenu li{display: inline-block;}
+.tabmenu li a{display: block;padding: 15px;}
+.tabmenu li a.on{background: #333;color:#fff}
+
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <ul class="tabmenu">
+            <li><a href="#" class="on">런던</a></li>
+            <li><a href="#">파리</a></li>
+            <li><a href="#">도쿄</a></li>
+        </ul>
+   
+    <div class="tabcontentcontainer">
+        <div id="London" class="tabcontent on">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+        
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          </div>
+        
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+    </div>
+ </div>
+
+</body>
+<script src="../js/jquery-3.6.0.js"></script>
+<script>
+ $('.tabmenu li').click(function(){
+    $('.tabmenu li a').removeClass('on')
+$(this).find('a').addClass('on')
+
+let idx=$(this).index()
+$('.tabcontent').fadeOut()
+$('.tabcontent').eq(idx).fadeIn()
+
+ })
+    
+
+
+</script>
+</html>

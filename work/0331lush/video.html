@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video{width: 600px;margin: 100px auto;}
+        video{display: block;}
+        button{padding: 10px;}
+    </style>
+</head>
+<body>
+    <div class="video">
+        <video src="./img/‘Oddly Satisfying Video(OSV)’.mp4" muted loop width="600"></video>
+        <button class="play">▶</button>
+        <button class="stop">■</button>
+        <button class="pause">⏸</button>
+        <button class="rate1">1배속</button>
+        <button class="rate2">2배속</button>
+        <button class="prev">&lt;&lt;</button>
+        <button class="next">&gt;&gt;</button>
+        <button class="size">100%</button>
+        <button class="sizeup">200%</button>
+        <button class="sizedown">50%</button>
+    </div>
+
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+let v=$('video').get(0)
+$('.play').click(function(){
+v.play()
+})
+$('.pause').click(function(){
+    v.pause()
+
+})
+$('.stop').click(function(){
+    v.pause()
+    v.currentTime=0
+
+})
+$('.rate1').click(function(){
+    v.playbackRate=1
+
+})
+$('.rate2').click(function(){
+    v.playbackRate=2
+
+})
+$('.prev').click(function(){
+    v.currentTime-=5
+
+})
+
+$('.next').click(function(){
+    v.currentTime+=5
+
+})
+$('.size').click(function(){
+    v.width=600
+
+})
+$('.sizeup').click(function(){
+    v.width=1200
+
+})
+$('.sizedown').click(function(){
+    v.width=300
+
+})
+
+
+    </script>
+</body>
+</html>

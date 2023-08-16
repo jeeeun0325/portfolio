@@ -1,0 +1,5 @@
+document.write('welcome')
+console.log('welcome')
+prompt('이름을 입력하세요',)
+alert('welcome')
+confirm('삭제하시겠습니까?')

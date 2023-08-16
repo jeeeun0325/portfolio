@@ -1,0 +1,78 @@
+body{background: #f3f0eb;line-height: 1.2;}
+header{height: 90px;box-shadow: 0 0 4px rgba(0,0,0,0.5); display: flex;align-items: center; justify-content: space-between;padding: 20px;position: fixed;width: 100%;background: #f3f0eb;z-index: 1;}
+header h1{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+nav{margin-left: 10px;}
+nav ul{display: flex;align-items: center;}
+nav ul li{margin-right: 30px;}
+.bar{cursor: pointer;}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 1px;
+    background-color: #00704a;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+.change .bar1 {
+    
+    transform: rotate(-45deg) translate(-9px, 7px)
+  }
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+.gnb ul{display: flex;}
+.gnb ul li{margin-right: 20px;}
+.gnb input{border: none;outline: none;border-bottom: 1px solid #000;background: none;}
+.wrap{display: flex;
+  height: calc(100vh - 90px);overflow: hidden;position: relative;top: 90px;}
+.scene{height: 100%;width: 50%;}
+.VslideContainer{width: 100%;height: 100%;}
+.VslideContainer .slideWrap{width: 100%;height: 100%;}
+
+.VslideContainer .slideWrap .slide{width: 100%;height: 100%;position: relative;}
+.VslideContainer .slideImg{width: 400px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.VslideContainer .slide img{width: 100%;}
+.VslideContainer .slideWrap .slide.aroma{background: url(./img/aroma.jpg);background-size: cover;height: 100%;}
+.VslideContainer .slide.skin{background: url(./img/skincare.jpg);background-size: cover;}
+.VslideContainer .slide.body{background: url(./img/bodycare.jpg);;background-size: cover;}
+.VslideContainer .slide.hair{background: url(./img/hair.jpg);background-size: cover;}
+.VslideContainer .slide.life{background: url(./img/life.jpg);background-size: cover;}
+.VslideContainer .slide.zero{background: url(./img/zero.jpg);width: 100%;height: 100%;background-size: cover;}
+
+.HslideContainer{width: 100%;height: 100%;overflow: hidden;}
+.HslideContainer .slideWrap{width: 600%;height: 100%;display: flex;}
+.HslideContainer .slideWrap .slide{width: 16.6666%;position: relative;}
+.desc{background: #fff;width: 750px;position: absolute;top: 44%;left: 50%;transform: translate(-50%,-50%);}
+/*  */
+.productInner ul{display: flex;justify-content: space-between;}
+.productInner ul li figure{width: 100px;height: 120px;}
+.productInner ul li figure img{width: 100%;height: 100%;}
+.aroma{padding-top: 100px;}
+
+
+.desc{padding: 20px;}
+.desc>h2{font-size: 28px;padding: 10px 0;border-bottom: 1px solid #eee;}
+.desc>p{font-size: 17px;padding: 20px 0;}
+.productDetail{height: 165px;}
+.productDetail ul li{display: none;}
+.productDetail ul li.on{display: block;}
+.productDetail ul li h3.name{font-size: 18px;font-weight: 600;padding-bottom: 10px;}
+.productDetail ul li p.price{font-size: 16px;color: #4a6a53;font-weight: 600;;padding-bottom: 10px;}
+.desc ul li p.detail{font-size: 16px;color: #888;font-weight: 500;;padding-bottom: 30px;}
+.productInner h3{font-size: 17px;padding-bottom: 20px;}
+.productInner li.on figure{border: 5px solid #f3f0eb;;}
+.productInner li figure{border: 5px solid transparent;}
+.productInner span{font-size: 12px;text-align: center;display: block;padding: 10px 0;}
+.btn{padding:20px 0 10px;}
+.btn ul{display: flex;justify-content: center;}
+.btn ul li{width: 25%;text-align: center;}
+.btn ul li a{display: block;}
+
+
+.arrow{position: absolute;width: 30px;height: 30px;top:50%;transform: translateY(-50%);}
+.arrow img{width: 100%;}
+.next.arrow{right: 20px;}
+.prev.arrow{left: 20px;}

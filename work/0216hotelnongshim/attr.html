@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+<style>
+.box{width: 300px;margin: auto;}
+.box img{width: 100%;border: 5px solid #000;}
+.btn{display: flex;}
+button{display: block;width: 50%;cursor: pointer;}
+button a.on{background: #000;color: #fff;}
+button a {display: block;padding: 10px;}
+
+</style>
+
+</head>
+<body>
+    <div class="box">
+        <img src="./img/boy.png" alt=""class="avata">
+<div class="btn">
+    <button ><a href="./img/boy.png"class="on">소년</a></button>
+    <button><a href="./img/girl.png">소녀</a></button>
+</div>
+    </div>
+<script src="../js/jquery-3.6.0.js"></script>
+<script>
+$('button a').click(function(e){
+e.preventDefault()
+    let href=$(this).attr('href')
+    console.log(href)
+$('.avata').attr({'src':href})
+})
+
+
+</script>
+
+</body>
+</html>

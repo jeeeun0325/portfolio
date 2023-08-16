@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정원e샵</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .mainBanner .mySwiper1 {
+            width: 100%;
+            height: 766px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            width: 288px;
+            height: 400px
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mySwiper2 {
+            width: 1300px; height: 480px;
+        }
+
+        .mySwiper2 .swiper-wrapper{
+            width: 1200px;}
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .mySwiper2 .swiper-slide {
+            flex-direction: column;
+        }
+
+        .shopwrap .swiper {
+            width: 380px;
+    height: 500px;
+        }
+
+        .shopwrap .img {
+            position: absolute;
+    bottom: 45px;
+    width: 380px;
+    height: 224px;
+        }
+
+        .shopwrap .img img {
+            width: 45%;
+    height: auto;
+    ; margin: auto;
+        }
+
+.img2{    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+.img3{position: absolute;
+    top: 150px;
+    width: 100%;}
+.img4{position: absolute;
+    top: 140px;
+    width: 100%;}
+.img4 img{width: 60%;margin: auto;}    
+
+.img3 img{width: 70%;margin: auto;}    
+.shopwrap .img2 img {
+            width: 65%;
+    height: auto;
+    margin: auto;
+        }
+.swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+.swiper-pagination-bullet-active {
+        color: #fff;
+        background: #000;
+      }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="hdleft">
+        <h1><img src="./img/정원e샵.png" alt=""></h1>
+        <div class="cate">
+            <div class="ic"></div>
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="search">
+        <div class="input"><input type="text"placeholder="검색어 입력..."></div>
+        <div class="sear">
+<i></i>
+        </div>
+        <div class="cart">
+<i></i>
+        </div>
+        <div class="login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">비회원주문조회</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+    <div class="mainBanner">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main01.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main02.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main03.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main04.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main05.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main06.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main07.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main08.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mainImg"><img src="./img/main09.png" alt=""></div>
+                </div>
+            </div>
+            <nav>
+                <a href="#" class="arrow prev"></a>
+                <ul>
+                    <li class="on"><a href="#"><span class="icon"><img src="./img/icon1.png" alt=""></span><b>정원e샵<br>3월
+                                증정이벤트</b></a></li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon2.png" alt=""></span><b>정원e샵<br>클래식데이</b></a>
+                    </li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon3.png" alt=""></span><b>정원e샵<br>상온&냉장
+                                무료배송이벤트</b></a>
+                    </li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon4.png"
+                                    alt=""></span><b>정원e샵<br>첫구매웰컴딜</b></a>
+                    </li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon5.png"
+                                    alt=""></span><b>종가집김치<br>적립금페이백</b></a></li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon6.png" alt=""></span><b>종가집<br>별미김치</b></a>
+                    </li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon7.png" alt=""></span><b>정원e샵<br>체험세트</b></a>
+                    </li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon8.png" alt=""></span><b>바로만들어
+                                신선한<br>김치공방</b></a></li>
+                    <li><a href="#"><span class="icon"><img src="./img/icon9.png" alt=""></span><b>365일
+                                상시할인<br>정원마트</b></a></li>
+                </ul>
+                <a href="#" class="arrow next"></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="shop">
+        <h3>정원e샵에서 알뜰쇼핑하세요</h3>
+        <p class="text">맛있고 건강한 먹거리를 찾아 오신 고객님을 위해 <br> 정원e샵은 더욱 특별한 쇼핑혜택을 드리기 위해 항상 노력합니다.</p>
+        <div class="shopwrap">
+            <div class="swiper add1">
+                <h2>특가할인</h2>
+                <div class="swiper-wrapper">      
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">36%</p>
+                            <p class="txt">종가집 시원하고 깔끔한 포기김치 5kg</p>
+                            <p class="pricen"><s>46,500원</s> 29,700원</p>
+                            <div class="img"><img src="./img/특가할인11.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">50%</p>
+                            <p class="txt">청정원 로제 스파게티 소스 600g(4인분)x3개</p>
+                            <p class="pricen"><s>17,700원</s> 8,850원</p>
+                            <div class="img"><img src="./img/특가할인12.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">50%</p>
+                            <p class="txt">청정원 안주야 논현동포차스타일 직화곱창 260gx3개</p>
+                            <p class="pricen"><s>20,940원</s>10,470원</p>
+                            <div class="img2"><img src="./img/특가할인13.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper add2">
+                <h2>고객증정혜택</h2>
+                <div class="swiper-wrapper">      
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">집으로ON 닭가슴살 카츠</p>
+                            <p class="txt">닭가슴살치즈카츠 400g 증정!</p>
+                            
+                            <div class="img4"><img src="./img/고객증정2.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper add3">
+                <h2>정원 PICK</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">낮은 당함량으로 걱정없이!</p>
+                            <p class="txt">청정원 오곡육채 건강한밥 단호박뿌리채소 200g x8개</p>
+                            <p class="pricen"><s>23,200원</s>19,200원</p>
+                            <div class="img3"><img src="./img/p21.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">100% 올리브유 사용!</p>
+                            <p class="txt">청정원 오곡육채 건강한밥 닭가슴살뿌리채소 200g x8개</p>
+                            <p class="pricen"><s>23,200원</s>19,200원</p>
+                            <div class="img3"><img src="./img/p22.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">6가지 채소로 더 맛있게!</p>
+                            <p class="txt">청정원 오곡육채 건강한밥 버섯소고기 200g x8개</p>
+                            <p class="pricen"><s>23,200원</s>19,200원</p>
+                            <div class="img3"><img src="./img/p23.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">하늘초로 불타는 매운맛!</p>
+                            <p class="txt">종가집 핵매운 김치 70g</p>
+                            <p class="pricen"><s>1,600원</s>1,500원</p>
+                            <div class="img2"><img src="./img/p24.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">마늘의 알싸함과 김치의 아삭함!</p>
+                            <p class="txt">종가집 마늘듬뿍김치 80g</p>
+                            <p class="pricen"><s>1,600원</s>1,500원</p>
+                            <div class="img2"><img src="./img/p25.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">62시간 숙성으로 고소한 면발!</p>
+                            <p class="txt">종가집 멸치 컵쌀국수 92gx12개</p>
+                            <p class="pricen"><s>24,960원</s>15,660원</p>
+                            <div class="img"><img src="./img/p26.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">발효명가 종가집!</p>
+                            <p class="txt">[박스]종가집 국산콩 생나또 48g*2입x23개(냉동)</p>
+                            <p class="pricen"><s>63,940원</s>36,900원</p>
+                            <div class="img"><img src="./img/p27.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">집에서 즐기는 꿔바로우!</p>
+                            <p class="txt">집으로ON 팔선생 꿔바로우 오리엔탈소이소스 350gx3개</p>
+                            <p class="pricen"><s>21,000원</s>15,620원</p>
+                            <div class="img2"><img src="./img/p28.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">겉은 바삭! 속은 부드러운!</p>
+                            <p class="txt">집으로ON 안심 크리스피 치킨텐더 520gx3개</p>
+                            <p class="pricen"><s>24,300원</s>18,100원</p>
+                            <div class="img2"><img src="./img/p29.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">고소하고 바삭한!</p>
+                            <p class="txt">집으로ON 라이스볼크런치 순살치킨 520gx3개</p>
+                            <p class="pricen"><s>24,300원</s>19,050원</p>
+                            <div class="img2"><img src="./img/p30.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">국내산 돼지고기를 사용한~!</p>
+                            <p class="txt">집으로ON 모짜렐라 크리스피 핫도그 850g(85gx10개입)x3봉</p>
+                            <p class="pricen"><s>48,900원</s>47,700원</p>
+                            <div class="img2"><img src="./img/p31.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">일상 생활 속에 활기를 주는!</p>
+                            <p class="txt">청정원 홍초 바이탈 플러스 석류 900mlx4개/정원마트</p>
+                            <p class="pricen"><s>46,000원</s>25,820원</p>
+                            <div class="img2"><img src="./img/p32.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="pro">
+                            <p class="sale">가정 혹은 캠핑장에서 맛있게 즐길 수 있는!</p>
+                            <p class="txt">집으로ON 용두동식쭈꾸미 보통매운맛 350g x2개</p>
+                            <p class="pricen"><s>18,400원</s>15,580원</p>
+                            <div class="img"><img src="./img/p33.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="best">
+        <h3>가장 인기있는 제품이에요</h3>
+        <p class="txt">정원e샵을 이용하시는 고객님들께서 가장 많이 구매하시는 제품만을 <br>
+            엄선해서 추천해 드립니다.</p>
+        <div class="b-con">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기1.png" alt=""></figure>
+                        <figcaption> <p class="tit"><b><img src="./img/ic_cold.png" alt=""></b>[종가집(신선)]</p>
+                            <p class="pd">종가집 썰어담은 맛김치 50g(AL)x3개</p> <br>
+                            <p><s>2,970원</s> <strong>2,430원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기2.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_cold.png" alt=""></b>[종가집(신선)]</p>
+                            <p class="pd">종가집 오징어채볶음 100g x 5개</p> <br>
+                            <p><s>25,400원 </s> <strong>22,900원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기3.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[집으로(ON)]</p>
+                            <p class="pd">집으로ON 치즈볼 300g + 소시지볼 300g(25gx12개입)</p> <br>
+                            <p><s>15,960원</s> <strong>13,300원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기4.jpg" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[집으로(ON)]</p>
+                            <p class="pd">집으로ON 빅소시지 크리스피 핫도그 770g(110gx7개입)</p> <br>
+                            <p><s>13,900원</s> <strong>11,900원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기5.jpg" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[청정원]</p>
+                            <p class="pd">청정원 안주야 직화 불막창 160gx3개</p> <br>
+                            <p><s>23,940원</s> <strong>17,950원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기6.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_roomTemperature.png" alt=""></b>[청정원]</p>
+                            <p class="pd">청정원 카레여왕 구운마늘&amp;양파 108g 분말(4인분)x3개/정원마트</p> <br>
+                            <p><s>12,300원</s> <strong>6,910원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기7.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_roomTemperature.png" alt=""></b>[청정원]</p>
+                            <p class="pd">[박스]청정원 들기름 바사삭김 4g 64봉(16봉x4개/도시락)/인기</p> <br>
+                            <p><s>24,000원</s> <strong>18,900원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기8.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[라이틀리]</p>
+                            <p class="pd">[체험세트] 라이틀리 곤약볶음밥 5종(닭가슴살 외 4종)</p> <br>
+                            <p><s>45,000원</s> <strong>26,900원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기9.jpg" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[집으로ON]</p>
+                            <p class="pd">(세트) 집으로ON 카레감자고로케 400g + 감자고로케 400g</p> <br>
+                            <p><s>13,000원</s> <strong>9,900원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기10.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_cold.png" alt=""></b>[종가집(신선)]</p>
+                            <p class="pd">종가집 보쌈 무말랭이 180gx4개</p> <br>
+                            <p><s>17,920원</s> <strong>16,100원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기11.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[라이틀리]</p>
+                            <p class="pd">라이틀리 곤약브리또 핫치킨 375g(3입)</p> <br>
+                            <p><s>12,500원</s> <strong>9,450원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기12.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[청정원]</p>
+                            <p class="pd">청정원 오리지날 콤비네이션피자 360g</p> <br>
+                            <p><s>5,980원</s> <strong>5,700원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기13.png" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_roomTemperature.png" alt=""></b>[종가집(상온)]</p>
+                            <p class="pd">종가집 고소한맛 볶음김치 160g(캔)x4개</p> <br>
+                            <p><s>11,600원</s> <strong>10,400원</strong></p>
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/인기14.jpg" alt=""></figure>
+                        <figcaption><p class="tit"><b><img src="./img/ic_frozen.png" alt=""></b>[청정원]</p>
+                            <p class="pd">(냉동)청정원 가슴살치킨텐더 1kg</p> <br>
+                            <p><s>32,000원</s> <strong>25,600원</strong></p>
+                        </figcaption>
+                    </div>
+
+                </div>
+             
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <h2 class="title">★신제품 구경하기</h2>
+        <div id="tab1">
+            <ul class="tabMenu flex">
+                <li><a href="#product1" class="on">★신제품 구경하기</a></li>
+                <li><a href="#product2">★배송비 절약상품</a></li>
+                <li><a href="#product3">★특가 할인 코너</a></li>
+                <li><a href="#product4">겨울엔 따뜻한국물</a></li>
+                <li><a href="#product5">BEST 상품</a></li>
+            </ul>
+            <div class="tabContent">
+                <h2>카테고리 인기 상품</h2>
+                <div id="product1" class="product on">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/new1.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>(22.01월출시) 두번튀겨내어 바삭바삭한!</span> 청정원 야식이夜 후라이드 통살...</p>
+                            </div>
+                            <div class="price"><div class="per">10%</div><div class="rt"><s>26,940원</s> <p>24,250원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new2.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>(21.12월출시)</span> 청정원 가로팔로 IGP 인증 파파델리 500g</p>
+                            </div>
+                            <div class="price"><s></s> <p>4,980원</p></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new3.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>(21.11월출시) 쫄깃한 자연 모짜렐라 치즈 듬뿍!</span> 청정원 모짜렐라 치즈볼... </p>
+                            
+                            </div>
+                            <div class="price"><div class="per">14%</div><div class="rt"><s>6,980원</s> <p>5,980원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new4.jpg" alt=""></figure>
+                            <div class="summary"><p class="tit">[청정원]<span>(21.12월출시)계란옷을 입혀 더 맛있는!</span>청정원 호밍스 고기완자 600gx3개</p>
+                            </div>
+                            <div class="price"><div class="per">10%</div><div class="rt"><s>25,440원</s> <p>22,900원</p></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="product2" class="product">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/배송1.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>남해안산 알칼리성 자연식품</span> 청정원 남해안산 청정 미역 40g(16인분)</p>
+                            </div>
+                            <div class="price"><div class="per">22%</div><div class="rt"><s>1,600원</s> <p>1,250원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/배송2.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>튀김류 및 샐러드 어울리는 머스타드소스</span> 청정원 홀그레인 머스타드 디핑...</p>
+                            </div>
+                            <div class="price"><div class="per">23%</div><div class="rt"><s>3,500원</s> <p>2,700원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/배송3.png" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[종가집(상온)]<span>해장할때 강추!</span> 종가집 멸치 컵쌀국수 92g</p>
+                            </div>
+                            <div class="price"><s></s> <p>2,080원</p></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/배송4.png" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[종가집(상온)]<span>국물이 끝내줘요!</span> 종가집 해물맛 컵쌀국수 92g</p>
+                            </div>
+                            <div class="price"><s></s> <p>2,080원</p></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="product3" class="product">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/특가1.png" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[종가집(상온)]<span>[5% 추가 적립]</span> 종가집 멸치 컵쌀국수 92gx12개</p>
+                            </div>
+                            <div class="price"><div class="per">37%</div><div class="rt"><s>24,960원</s> <p>15,660원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/특가2.png" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] 청정원 할라피뇨 소시지랑떡이랑 440g(4개입, 소스 4개 별첨)</p>
+                            </div>
+                            <div class="price"><div class="per">40%</div><div class="rt"><s>7,980원</s> <p>4,780원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/특가3.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>오늘의 묶음 초특가!</span> 청정원 로제파스타소스 600g + 스파게티면 500g</p>
+                            </div>
+                            <div class="price"><div class="per">51%</div><div class="rt"><s>20,200원</s> <p>9,900원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/특가4.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>오늘의 묶음 초특가!</span> 청정원 인기 파스타 소스 4종 + 스파게티면 500g</p>
+                            </div>
+                            <div class="price"><div class="per">63%</div><div class="rt"><s>28,200원</s> <p>10,500원</p></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="product4" class="product">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/겨울1.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>한우 100%를 사용하여 정성껏 고아낸!</span>청정원 호밍스 한우진곰탕 450g</p>
+                            </div>
+                            <div class="price"><div class="per">51%</div><div class="rt"><s>2,990원</s> <p>1,480원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/겨울2.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>365일 할인</span>청정원 호밍스 한우진육수 300gx6개/정원마트</p>
+                            </div>
+                            <div class="price"><div class="per">34%</div><div class="rt"><s>9,000원</s> <p>5,900원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/겨울3.png" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[집으로ON] 집으로ON 서울식 양지설렁탕 500g</p>
+                            </div>
+                            <div class="price"><s></s><p>3,600원</p></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/겨울4.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>한우 100%를 사용하여 정성껏 고아낸!</span>청정원 호밍스 한우진곰탕 450gx3개</p>
+                            </div>
+                            <div class="price"><div class="per">53%</div><div class="rt"><s>8,970원</s> <p>4,220원</p></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="product5" class="product">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/best1.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>직접갈아 넣은 파인애플과 사과 과즙으로 더욱 상큼한</span>청정원 도쿄클래식돈...</p>
+                            </div>
+                            <div class="price"><s></s><p>2,320원</p></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/best2.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>[깜짝행사: 13일까지]</span>청정원 호밍스 언양식 바싹불고기 270g</p>
+                            </div>
+                            <div class="price"><div class="per">47%</div><div class="rt"><s>8,980원</s> <p>4,800원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/best3.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>유기농이라 더 좋은</span>청정원 유기농 황설탕 1kg</p>
+                            </div>
+                            <div class="price"><div class="per">29%</div><div class="rt"><s>6,300원</s> <p>4,500원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/best4.png" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<span>맛있고 건강한 프리미엄 간식</span>청정원 고구마츄 60gx3개</p>
+                            </div>
+                            <div class="price"><div class="per">34%</div><div class="rt"><s>10,500원</s> <p>6,900원</p></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="tab2">
+            <ul class="tabMenu flex">
+                <li><a href="#product6" class="on">전체상품</a></li>
+                <li><a href="#product7">묶음상품</a></li>
+                <li><a href="#product8">무료상품</a></li>
+            </ul>
+            <div class="tabContent">
+                <!-- <div class="productlist"> -->
+                <div id="product6" class="product on">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/new전체1.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(21.11월출시) 쫄깃하고 달콤한 꿀조합</span>청정원 야식이夜 비엔나&amp;떡볶이 520g</p>
+                            </div>
+                            <div class="price"><div class="per">19%</div><div class="rt"><s>8,980원</s> <p>7,290원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new전체2.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(22.01월출시) 두번튀겨내어 바삭바삭한!</span>청정원 야식이夜 후라이드 통살치킨 450g</p>
+                            </div>
+                            <div class="price"><s></s> <p>8,980원</p></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new전체3.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(22.01월출시) 청양고추를 넣어 매콤바삭한~</span>청정원 야식이夜 고추듬뿍 통살치킨 450g</p>
+                            </div>
+                            <div class="price"><s></s> <p>8,980원</p></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new전체4.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(21.12월출시) 계란옷을 입혀 더 맛있는!</span>청정원 호밍스 고기완자 600g</p>
+                            </div>
+                            <div class="price"><div class="per">6%</div><div class="rt"><s>8,480원</s> <p>7,980원</p></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="product7" class="product">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/new묶1.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(22.01월출시) 두번튀겨내어 바삭바삭한!</span>청정원 야식이夜 후라이드 통살치킨 450gx3개</p>
+                            </div>
+                            <div class="price"><div class="per">10%</div><div class="rt"><s>26,940원</s> <p>24,250원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new묶2.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(21.12월출시) 계란옷을 입혀 더 맛있는!</span>청정원 호밍스 고기완자 600gx3개</p>
+                            </div>
+                            <div class="price"><div class="per">10%</div><div class="rt"><s>25,440원</s> <p>22,900원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new묶3.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(22.01월출시) 청양고추를 넣어 매콤바삭한~</span>청정원 야식이夜 고추듬뿍 통살치킨 450gx3개</p>
+                            </div>
+                            <div class="price"><div class="per">10%</div><div class="rt"><s>26,940원</s> <p>24,250원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new묶4.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(22.01월출시) 달콤고소한 치즈시증닝을 솔솔~</span>청정원 야식이夜 치즈솔솔 통살치킨 450g...</p>
+                            </div>
+                            <div class="price"><div class="per">10%</div><div class="rt"><s>26,940원</s> <p>24,250원</p></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="product8" class="product">
+                    <ul class="item">
+                        <li>
+                            <figure><img src="./img/특가1.png" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[종가집(상온)] <img src="./img/ic_roomTemperature.png" alt=""> <br><span>[5% 추가 적립]</span> 종가집 멸치 컵쌀국수 92gx12개</p>
+                            </div>
+                            <div class="price"><div class="per">37%</div><div class="rt"><s>24,960원</s> <p>15,660원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/new묶1.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원] <img src="./img/ic_frozen.png" alt=""><br><span>(22.01월출시) 두번튀겨내어 바삭바삭한!</span>청정원 야식이夜 후라이드 통살치킨 450gx3개</p>
+                            </div>
+                            <div class="price"><div class="per">10%</div><div class="rt"><s>26,940원</s> <p>24,250원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/특가3.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<img src="./img/ic_roomTemperature.png" alt=""> <br><span>오늘의 묶음 초특가!</span> 청정원 로제파스타소스 600g + 스파게티면 500g</p>
+                            </div>
+                            <div class="price"><div class="per">51%</div><div class="rt"><s>20,200원</s> <p>9,900원</p></div></div>
+                        </li>
+                        <li>
+                            <figure><img src="./img/겨울2.jpg" alt=""></figure>
+                            <div class="summary">
+                                <p class="tit">[청정원]<img src="./img/ic_roomTemperature.png" alt=""> <br><span>365일 할인</span>청정원 호밍스 한우진육수 300gx6개/정원마트</p>
+                            </div>
+                            <div class="price"><div class="per">34%</div><div class="rt"><s>9,000원</s> <p>5,900원</p></div></div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

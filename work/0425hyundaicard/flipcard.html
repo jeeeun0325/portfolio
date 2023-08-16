@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;overflow-x: hidden;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 312px;
+  height: 494px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 312px;
+  height: 494px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  
+  color: black;
+}
+.flip-card-front img{width: 100%;height: 100%;}
+
+.flip-card-back {
+  background-color: #2980b9;border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+}
+.wrap{display: flex;width: 3000px;position: relative;left: -3260px;}
+#work{height: 500px;border: 1px solid #000;position: relative;top: 15%;}
+a.prev,a.next{position: fixed;top: 45%;}
+a.prev img,a.next img{width: 50px;;}
+a.prev{left: 10px;}
+a.next{right: 10px;}
+</style>
+</head>
+<body>
+
+<section id="work">
+    <h1>Card Flip with Text</h1>
+    <h3>Hover over the image below:</h3>
+    
+    <div class="wrap">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./img/네이버 현대카드.png" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h1>1</h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/the Red Edition5.png" >
+              </div>
+              <div class="flip-card-back">
+                <h1>2</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/the starbucks.png" alt="Avatar" >
+              </div>
+              <div class="flip-card-back">
+                <h1>연회비</h1>
+                <p>
+                    국내전용
+                    본인 30,000원
+                    VISA/MasterCard 
+                    본인 30,000원
+                    카드 상세보기 ></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/배민현대카드.png" alt="Avatar" >
+              </div>
+              <div class="flip-card-back">
+                <h1>4</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/대한항공카드.png" alt="Avatar" >
+              </div>
+              <div class="flip-card-back">
+                <h1>5</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/GS칼텍스.png" alt="Avatar" >
+              </div>
+              <div class="flip-card-back">
+                <h1>6</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/the Black Edition3.png" alt="Avatar" >
+              </div>
+              <div class="flip-card-back">
+                <h1>7</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/the Purple.png" alt="Avatar" >
+              </div>
+              <div class="flip-card-back">
+                <h1>8</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/the Pink.png" alt="Avatar" >
+              </div>
+              <div class="flip-card-back">
+                <h1>9</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./img/네이버 현대카드.png" alt="Avatar">
+              </div>
+              <div class="flip-card-back">
+                <h1>1</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./img/the Red Edition5.png" >
+                </div>
+                <div class="flip-card-back">
+                  <h1>2</h1>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./img/the starbucks.png" alt="Avatar" >
+                </div>
+                <div class="flip-card-back">
+                  <h1>연회비</h1>
+                  <p>
+                      국내전용
+                      본인 30,000원
+                      VISA/MasterCard 
+                      본인 30,000원
+                      카드 상세보기 ></p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./img/배민현대카드.png" alt="Avatar" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>4</h1>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./img/대한항공카드.png" alt="Avatar" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>5</h1>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./img/GS칼텍스.png" alt="Avatar" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>6</h1>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+    
+    
+    </div>
+    <a href="#" class="prev"><img src="./img/left-arrow.png" alt=""></a>
+    <a href="#" class="next"><img src="./img/right-arrowb.png" alt=""></a>
+</section>
+
+<script src="../js/jquery-3.6.0.js"></script>
+
+<script>
+setInterval(flowBanner,10)
+let loc=0
+let dir=-1
+let speed=1
+function flowBanner(){
+    loc+=speed*dir
+    $('.wrap').css({'left':loc})
+    console.log(loc)
+if(loc<=-3260){
+    loc=0
+}else if(loc>=0){
+    loc=-3260
+}
+
+}
+$('a.prev').mouseenter(function(){
+dir=1
+speed=1
+
+})
+$('a.next').mouseenter(function(){
+dir=-1
+speed=3
+    
+})
+
+$('.flip-card').mouseenter(function(){
+speed=0
+})
+$('.flip-card').mouseleave(function(){
+speed=1
+
+})
+</script>
+</body>
+</html>

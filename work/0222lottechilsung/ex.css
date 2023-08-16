@@ -1,0 +1,75 @@
+@import url(/reset.css);
+
+section#sect2 {
+    height: 100vh;
+    background: rgb(156, 241, 237);
+}
+
+section#sect1 {
+    background: rgb(224, 233, 172);
+}
+ 
+
+section .inner {
+    position: relative;
+    width: 90%;
+    background: #fff;
+    margin: auto;
+}
+
+
+article figure {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    /* display: none; */
+}
+article figure 
+img{width: 100%;position: absolute;
+    bottom: 0;
+    /* opacity: 0; */
+}
+/* ------------------------------------------------------- */
+@media only screen and (max-width: 500px) {
+    section#sect1 {
+        height: 153vw;
+    }
+
+    section .inner {
+        top: 35%;
+        height: 70vw;
+    }
+
+    article figure {width: 54%;height: 50vw;}
+    article figure {right:-60px;}
+}
+
+/* ------------------------------------------------------- */
+
+@media only screen and (min-width: 501px) {
+    section#sect1 {
+        height: 110vw;
+    }
+
+    section .inner {
+        top: 20%;
+        height: 54vw;
+    }
+    article figure {width: 46%;height: 43vw;}
+}
+
+/* ------------------------------------------------------- */
+@media only screen and (min-width: 1280px) {
+    section#sect1 {
+        height: 62vw;
+    }
+
+    section .inner {
+        width: 54%;
+        max-width: 1030px;
+        height: 25vw;
+        top: 390px
+    }
+    article figure {width: 50%;height: 30vw;}
+    article figure {right:-100px;}
+}

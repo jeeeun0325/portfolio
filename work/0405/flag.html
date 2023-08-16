@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+body{text-align: center;}
+ul{display: flex;}
+button{margin-right: 5px;}
+img.down{transform: rotate(30deg);}
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><img src="./img/blue.png" alt="" class="blue"></li>
+        <li><img src="./img/white.png" alt="" class="white"></li>
+        <li><img src="./img/red.png" alt="" class="red"></li>
+    </ul>
+
+    <button id="flag1">청기내려</button>
+    <button id="flag2">백기내려</button>
+    <button id="flag3">홍기내려</button>
+
+<script src="../js/jquery-3.6.0.js"></script>
+    <script>
+        $('#flag1').on('click',blueDown)
+        $('#flag2').on('click',whiteDown)
+        $('#flag3').on('click',redDown)
+function blueDown(){
+   $('.blue').addClass('down')   
+   setTimeout(reset, 1000)
+
+}
+function whiteDown(){
+    $('.white').addClass('down')   
+   setTimeout(reset, 1000)
+}
+function redDown(){
+    $('.red').addClass('down')   
+   setTimeout(reset, 1000)
+}
+function reset(){
+    $('img').removeClass('down')
+}
+
+    </script>
+</body>
+</html>

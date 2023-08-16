@@ -1,0 +1,42 @@
+header{box-shadow: 0 10px 5px #eee;}
+header .inner{display: flex; width: 1092px; height: 57px;padding: 0 6px;
+margin: auto;align-items: center;}
+header nav ul{display: flex; }
+header nav ul li{flex: 1;}
+
+
+.banner {height: 171px; background-image: url(./images/tiretech_keyvisual.png);
+     background-position: right center;
+display: flex; justify-content: center;align-items: center;
+}
+     
+ul.submenu{border-bottom: 1px solid #000;display: flex;justify-content: center;align-items: center;}
+ul.submenu li{padding: 10px;}
+
+.container{width: 1080px; margin: auto;}
+div.title{display: flex;justify-content: space-between;
+height: 50px;align-items: center;
+border:1px solid #000}
+
+div.title ul.sns{display: flex;align-items: center;}
+div.title ul.sns li{display: flex;}
+div.title ul.sns li img{ 
+     height: 30px; 
+ }
+ 
+ul.product{display: flex;
+justify-content: space-between;
+flex-wrap: wrap;}
+
+ul.product li{width: 48%;border: 1px solid #000;}
+
+div.item> ul{display: flex;
+     justify-content: space-between;}
+     div.item ul li{flex: 1;}
+     .item li em{display: block;
+     font-style: normal;
+     font-weight: bold;
+     }
+
+
+

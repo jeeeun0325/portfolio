@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+
+    <style>
+    body{overflow-x:hidden ;}
+    .slidewrap{width: 1050px;height: 552px; margin: auto;position: relative; }
+    .slide{width: 1050px; height: 550px; position: absolute; left: 50%;} 
+    .slide img{transform: translateX(-50%);}
+ 
+
+    </style>
+
+</head>
+
+<body>
+    <div class="slidewrap">
+        <div class="slide"><img src="./img/slide1.png" alt=""></div>
+        <div class="slide"><img src="./img/slide2.png" alt=""></div>
+        <div class="slide"><img src="./img/slide3.png" alt=""></div>
+    </div>
+
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+        // $('.slide').click(function(){
+            // let idx=$(this).index()
+            // alert(idx) index는 순서 })
+
+            $('.slide:gt(0)').hide()
+            setInterval(function(){
+                $('.slide:first').fadeOut(3000).next().fadeIn(3000)
+                $('.slide:first').appendTo('.slidewrap')
+            },3000);
+
+    </script>
+
+</body>
+
+</html>

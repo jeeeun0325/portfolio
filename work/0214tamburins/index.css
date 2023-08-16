@@ -1,0 +1,105 @@
+
+body{background: linear-gradient(to bottom, rgba(186,199,208,1) 0%,rgba(73,88,121,1) 77%,rgba(73,88,121,1) 77%,rgba(35,44,59,1) 100%);background-repeat: no-repeat;background-size: cover;
+width: 100%;height: 100vh;overflow: hidden;}
+.wrap{min-width: 1200px;height: 100vh;position: relative;left: 50%;transform: translateX(-50%);}
+
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'ROKAFSlabSerifMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  */
+header{height: 180px;width: 1200px; display: flex;flex-direction: column; text-align: center;margin: auto;padding-top: 20px;}
+header h1{padding: 25px 0;}
+header a{color: #fff;}
+nav{width: 100%;padding: 10px 0;    font-family: 'GowunDodum-Regular';
+}
+nav ul li{flex:1;padding: 12px 0;margin:0 10px;}
+header img{width: 200px;}
+header ul{display: flex;}
+
+.gnb{width: 17%;position: absolute;left:75%;top:15px;    font-family: 'GowunDodum-Regular';
+}
+.gnb ul{width: 100%;}
+.gnb li{flex: 1;}
+
+.main{border-radius: 30px ;border: 1px solid transparent;}
+
+.main:hover{border-color:#fff;}
+
+
+/*  */
+
+
+/* 디바이스 기준 중앙이미지부터 보이게 하기 위해 */
+.content .left{position: absolute; left: 50%;width: 800px;height: 460px; 
+    /* 앱솔때문에 높이가없으면 버튼들이 올라감 자식들의 위치를 쉽게 지정하기 위해 높이를 설정 */
+    margin-left: -28%;top:25%}
+.left p{position: absolute;font-size: 20px; left: 230px; bottom:-28px;color:#abdcee;font-weight: bold ;}    
+/*비디오의 보이는 위치값 */
+figure{width: 800px;position: absolute; top: 0;}
+video{width: 800px;height: 460px; background-color: #000;}
+.content .right{position: absolute; left: 50%;margin-left: 260px;top:350px}
+.content .right img{width: 450px;}
+/*버튼의 보이는 위치값  */
+.btn{position: absolute;bottom: -100px;left: 240px; margin-top: 20px;
+    display: flex;align-items: center;justify-content: center; padding: 10px 0;text-align: center;
+font-family: 'SBAggroL';}
+.btn li a{color: #fff;font-weight: lighter;}
+.btn li{width: 150px;padding: 15px 0;border: 1.5px solid #fff;border-radius: 30px;margin:0 5px;}
+.btn li:hover{background-color: rgb(161, 159, 159,.5);border:1px solid transparent}
+
+
+article.art1{width: 800px;height: 650px;  position: absolute;
+left: 50%;top: 58%;transform: translate(-50%,-50%);display: none;    font-family: 'GowunDodum-Regular';
+}
+.art1bg{width: 800px;height: 650px;position: absolute;
+    left: 50%;top: 50%;transform: translate(-50%,-50%);
+    background: rgba(186,199,208,1);z-index: -1;display: none;}
+
+.art1 ul{display: flex;flex-wrap: wrap;justify-content: center;
+    align-items: flex-end;position: absolute;top:100px;
+}
+.art1 ul li{margin-bottom: 50px;
+    margin-top: 10px;padding: 0 10px; }
+.art1 ul li img{width: 235px;}
+.art1Imge{display: none;}
+.pro{display: none;}
+a.close{position: absolute;right: 0;top:-60px;}
+a.close img{width: 43px;}
+p.pro{width: 235px; color: #fff;font-size: 12px;text-align: center;padding: 5px 0; }
+p.ca{color: #fff;font-size: 13px;padding: 10px ;display: none;}
+.ca span{font-size: 18px;}
+.art1 span{color: #48acd1;font-weight: bold;}
+/*  */
+.art1 p{position: absolute;}
+p.linetop{ width: 0%;height: 2px;background: rgba(186,199,208,.8);}
+p.linebottom{ width: 0%;height: 2px;right: 0;bottom: 0;background: rgba(186,199,208,1);}
+p.lineright{ width: 2px;height: 0%;top: 0;right: 0;background: rgba(186,199,208,1);}
+p.lineleft{ width: 2px;height: 0%;bottom: 0;left: 0;background: rgba(186,199,208,1);}
+
+/*  */
+article.art2{width: 100%;height: 400px;  position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);
+    background: rgba(186,199,208,.9);
+    display: none;}
+    .art2 .best{color:#48acd1 ;font-size: 25px;font-weight: bold;
+    padding: 15px;}
+.art2 ul{ display: flex;justify-content: space-around;align-items: center;margin-top: 20px;margin-left: 150%;}
+.art2Imge{width: 300px;}
+.pro2{font-size: 15px;width: 300px;text-align: center;padding: 10px 0;    font-family: 'GowunDodum-Regular';
+}
+.pro2 span{display: block;padding: 5px 0;font-size: 18px;font-weight: bold;
+}

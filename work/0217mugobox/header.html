@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./header.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+                <h1><img src="./img/logo.svg" alt=""></h1>
+                <ul id="menu" class="menu">
+                    <li class="main">
+                        <a href="#"class="main-menu"><span data-hover="회사소개"class="data-hover">COMPANY</span></a>
+                        <ul class="sub_menu">
+                            <li><a href="#"><span>MU:M EDUCATION</span></a></li>
+                            <li><a href="#"><span>MU:M Thinks</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main">
+                        <a href="#"class="main-menu"><span data-hover="제품소개"class="data-hover">PRODUCT</span></a>
+                        <ul class="sub_menu">
+                            <li><a href="#"><span>뮤고큐박스:유아영어 시스템 전집</span></a></li>
+                            <li><a href="#"><span>뮤고큐박스:살아있는 캐릭터 뮤고와 함께</span></a></li>
+                            <li><a href="#"><span>뮤고큐박스:아이가 일상을 영어로 사는 것</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main">
+                        <a href="#"class="main-menu"><span data-hover="구입하기"class="data-hover">MU:GO MALL</span></a>
+                        <ul class="sub_menu">
+                            <li><a href="#"><span>뮤고큐박스</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main">
+                        <a href="#"class="main-menu"><span data-hover="회원 서비스"class="data-hover">EDUCATIONAL SUPPORT</span></a>
+                        <ul class="sub_menu">
+                            <li><a href="#"><span>토크쇼 및 똑똑박스</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main">
+                        <a href="#"class="main-menu"><span data-hover="고객 서비스"class="data-hover">CUSTOMER SERVICE</span></a>
+                        <ul class="sub_menu">
+                            <li><a href="#"><span>토크쇼 센터찾기 &amp; 예약하기</span></a></li>
+                            <li><a href="#"><span>공지사항</span></a></li>
+                            <li><a href="#"><span>이벤트</span></a></li>
+                            <li><a href="#"><span>FAQ</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="member_menu">
+        
+                    <a href="#" class="member_menu_login mugo_open_mfp"><span>LOGIN</span></a>
+                    <a href="#" class="member_menu_signup"><span>SIGN UP</span></a>
+                </div>
+            </div>
+            </header> 
+<script src="../js/jquery-3.6.0.js"></script>
+<script>
+$('li.main').mouseenter(function(){
+    /* 사용자 정의 속성값 data-의 값을 읽어 들인다. */
+    let menu=$(this).find('span').attr('data-hover')
+    /* 동적으로 a태그를 만들어 span뒤에 붙이고 data-값을 지정해라 */
+    $(this).find('span.data-hover').append(`<a>${menu}</a>`)
+    $(this).find('span').stop().animate({'bottom':'-30px'})
+    $('ul.sub_menu').stop().slideUp()
+    $(this).find('ul.sub_menu').slideDown()
+
+})
+
+
+$('li.main').mouseleave(function(){
+    $(this).find('span').stop().animate({'bottom':'0px'})
+    $(this).find('span a').remove()
+    $('ul.sub_menu').stop().slideUp()
+
+})
+
+
+
+
+</script>
+
+</body>
+</html>

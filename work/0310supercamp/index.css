@@ -1,0 +1,123 @@
+/* header */
+header{height: 121px;display: flex;justify-content: center;align-items: center;}
+a{display: block;}
+header h1{padding-right: 50px;}
+header nav>ul{display: flex;width:695px;}
+header nav>ul>li.main{flex: 1;text-align: center;height: 88px;}
+header nav>ul>li{background: url(./img/topmenu.gif);background-repeat: no-repeat;}
+header nav>ul>li:nth-child(2){background-position-x: -125px;}
+header nav>ul>li:nth-child(3){background-position-x: -246px;}
+header nav>ul>li:nth-child(4){background-position-x: -365px;}
+header nav>ul>li:nth-child(5){background-position-x: -487px;}
+header nav>ul>li:nth-child(6){background-position-x: -600px;}
+li.main>a{color: transparent;}
+li.main{position: relative;opacity: .8;cursor: pointer;}
+li.main.on{opacity: 1;}
+li.main:after{display: none;}
+li.main.on:after{position: absolute;content: '';width: 100%;height: 3px;background: #292043;top:72px;left: 0;display: block;transition: .5s;}
+ul.sub{position: absolute;top: 75px;width: 700px;left: -50px;;z-index: 900;display: none;}
+li.main:nth-child(3) ul.sub{left: 0;}
+li.main:nth-child(5) ul.sub{left: 0;}
+.flex{display: flex;}
+ul.sub li{padding: 10px;background: #292043;}
+ul.sub li a{color: #a6a2b4;display: block;text-align: center;opacity: .8;font-size: 14px
+    ;}
+    ul.sub li:hover a{opacity: 1;}
+/* main slide */
+.mainSlide .swiper-slide{text-align: center;}
+.mainSlide .swiper-slide:nth-child(1){background: url(./img/mainbg01.gif);}
+.mainSlide .swiper-slide:nth-child(2){background: url(./img/mainbg02.gif);}
+.mainSlide .swiper-slide:nth-child(3){background: url(./img/mainbg03.gif);}
+
+#mainBg{height: 524px;}
+#subBg{width: 100%; height: 120px;}
+.mainBg0{background: url(./img/mainbg01.gif);}
+.subBg0{background: url(./img/mainbg01_b.gif);}
+.mainBg1{background: url(./img/mainbg02.gif);}
+.subBg1{background: url(./img/mainbg02_b.gif);}
+.mainBg2{background: url(./img/mainbg03.gif);}
+.subBg2{background: url(./img/mainbg03_b.gif);}
+
+.main{position: relative;}
+.sub{position: absolute;top: 14%;right: 25%;}
+.subSlide{background: url(./img/슈퍼캠프코리아.png);background-repeat: no-repeat;}
+.subSlide img{width: 100%;height: 245px;margin-top: 26px;}
+
+/* 박스 */
+.box{width: 980px;margin: auto;position: absolute;left: 50%;z-index: 1;
+    transform: translateX(-50%);
+    top: 399px;}
+.row1{height: 125px;;}
+.row1 b{color: #fff;font-size: 12px;font-weight: bold;}
+.row1 a{width: 80px;height: 80px;text-align: center;;}
+.row1 a img{width: 100%;}
+.row1 a:hover img{transform: scale(1.2);transition: .5s;}
+.row1 ul{display: flex;width: 100%;}
+.row1 ul li{width: 25%;height: 125px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.row1 ul li:nth-child(1){background: url(./img/ytb1.jpg);background-repeat: no-repeat;background-size: cover;;}
+.row1 ul li:nth-child(2){background: url(./img/ytb2.jpg);background-repeat: no-repeat;background-size: cover;}
+.row1 ul li:nth-child(3){background: url(./img/ytb3.jpg);background-repeat: no-repeat;background-size: cover}
+.row1 ul li:nth-child(4){background: url(./img/ytb4.jpg);background-repeat: no-repeat;background-size: cover;}
+
+
+.row2{height: 245px;}
+.row2 ul{display: flex;}
+.row2 ul li{position: relative;}
+.row2 a p{color: #fff;line-height: 1.5;}
+.txtBox{position: absolute;bottom: 20px;left: 20px;}
+.row2>ul>li{width: 25%;height: 245px;}
+.row2>ul>li:nth-child(1){background: url(./img/main_movieplay.gif);position: relative;;}
+li.hor2 span{display: block;width: 100%;height: 100%;position: absolute;background: url(./img/EBS\ 다큐프라임에\ 소개된\ 슈퍼캠프\ 관련\ 영상.png);background-position-x: 245px;}
+.row2>ul>li.hor2:hover span{background-position-x:0 ;transition: .6s;;}
+
+.row2>ul>li:nth-child(1) img{z-index: -10;}
+.row2>ul>li:nth-child(2){background: url(./img/row22.gif);}
+
+.row2>ul>li:nth-child(3){background: url(./img/row23.gif);}
+
+.row2 ul li:nth-child(4){background: #fff;}
+ul li.ver:hover{background-position-y:245px ;transition: .6s;}
+.row3 ul li.ver:hover{background-position-y:245px ;transition: .6s;}
+.row3 ul li.hor2:hover{background-position-x:-245px ;transition: .6s;;}
+
+ul li.hor:hover{background-position-x:245px ;transition: .6s;;}
+.row3 {height: 245px;}
+.row3>ul{display: flex;}
+.row3>ul>li{width: 25%;height: 245px;}
+.row3>ul>li:nth-child(1){background: #eee;}
+.row3>ul>li:nth-child(2){background: url(./img/row32.gif);}
+.row3>ul>li:nth-child(3){background: url(./img/row33.gif);}
+
+.row3 li.col43 ul li.hor2:hover{background-position-x:-245px ;transition: .6s;;}
+li.col43 ul,li.col42 ul{display: flex;flex-direction: column;height: 100%;width: 100%;}
+li.col43 ul li,li.col42>ul>li{height: 50%;width: 100%;}
+.row3 li.col43 ul li:nth-child(1){background: url(./img/고객상담센터\ 전화번호\ 1855-0783.jpg);}
+.row3 li.col43 ul li:nth-child(2){background: url(./img/Contact\ us.gif);}
+.col42>ul>li.tit{padding: 20px;font-size: 14px;font-weight: 600;padding-bottom: 10px;}
+li.tit ul{padding-top: 20px;}
+li.tit ul li{font-size: 12px;padding-bottom: 5px;font-weight: 200;cursor: pointer;}
+.tit.press{background: #eee;}
+li.cp{padding:0 30px 30px;}
+li.cp h3{padding: 20px 0;}
+li.cp ul{display: flex;flex-wrap: wrap;justify-content: space-between;}
+li.cp ul li{width: 32%;padding-bottom: 3px;}
+li.cp ul li a{height: 54px;;}
+li.cp ul li img{width: 100%;height: 100%;filter:grayscale(100%);opacity: .5;}
+li.cp ul li:hover img{filter: none;opacity: 1;}
+.row4Slide .swiper-slide{border: 1px solid #f6f6f6;}
+.row4Slide .swiper-slide img{filter: grayscale(100%);opacity: .5;}
+.row4Slide .swiper-slide:hover img{filter: none;opacity: 1;}
+
+/* footer */
+footer{height: 120px;padding: 20px;width: 980px;margin: auto;display: flex;align-items: center;}
+.ftmenu{padding: 0 50px;}
+.ftmenu ul{display: flex;font-size: 13px;line-height: 1.2;font-weight: 600;}
+.ftmenu ul li{margin-right: 10px;position: relative;}
+.ftmenu ul li::after{content: '';width: 1px;height: 13px;position: absolute;top: 2px;right: -5px; background: #888;}
+.ftmenu ul li:last-child:after{display: none;}
+.ftmenu p{font-size: 13px;line-height: 1.2;color: #888;}
+.ftright ul{display: flex;}
+.ftright ul li{margin-right: 10px;}
+.ftright ul li:nth-child(3){background: #00afff;border-radius: 50%;width: 25px;height: 25px;text-align: center;position: relative;}
+.ftright ul li:nth-child(4){background: blue;border-radius: 50%;width: 25px;height: 25px;text-align: center;position: relative;}
+.ftright ul li i{display: inline-block; font-size: 20px;color: #fff;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}

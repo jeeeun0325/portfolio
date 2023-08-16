@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹페이지</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .content {border: 10px solid #000;
+            height: 500px;}
+
+        nav {height: 200px;
+            background: rgb(228, 137, 137)}
+
+        main {height: 300px;
+            background: rgb(176, 143, 236);}
+
+        body { background: #aaa;}
+
+        h2{display: none;}
+
+        /*---------------------------------모바일------------------------------  */
+        @media only screen and (max-width: 480px) {
+            body {background-color: lightblue;}
+            h2.mo{display: block;}
+            }
+
+
+        /*---------------------------------태블릿-------------------------------  */
+        @media only screen and (min-width: 481px) {
+            body {background-color: rgb(129, 209, 185);}
+            nav {width: 20%;}
+            main {width: 80%;}
+            .content{display: flex;}
+            h2.tb{display: block;}
+        }
+
+
+        /* ---------------------------------피씨------------------------------ */
+        @media only screen and (min-width: 1024px) {
+            .content {max-width: 1200px;margin: auto;}
+            h2.pc{display: block;}
+            h2.tb{display: none;}
+        }
+        /* ---------------------------------------------------------------- */
+    </style>
+</head>
+
+<body>
+    <h2 class="pc">Pc</h2>
+    <h2 class="tb">Tablet</h2>
+    <h2 class="mo">Mobile</h2>
+    <div class="content">
+        <nav></nav>
+        <main></main>
+
+    </div>
+</body>
+
+</html>

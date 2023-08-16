@@ -1,0 +1,9 @@
+body{background-color: rgb(188, 196, 210);;}
+.wrap{width: 892px;margin: auto;}
+.top{text-align: right;padding-bottom: 100px;}
+.top2{display: flex;justify-content: space-between;padding-bottom: 75px;}
+.top2 ul{display: flex;}
+.order{padding-bottom: 35px;}
+.tel input[type='text']{width: 60px;}
+tr{display: flex;}
+td{display: flex;}

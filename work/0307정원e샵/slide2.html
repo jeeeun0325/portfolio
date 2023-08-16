@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정원e샵</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <style>
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 288px;height: 500px
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+        
+        .mySwiper2{width: 1400px;}
+
+.mySwiper2 .swiper-slide img{width: 100%;}
+.mySwiper2 .swiper-slide{border: 1px solid #000;}
+
+    </style>
+</head>
+
+<body>
+  
+
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        1
+                        <figure><img src="./img/인기1.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        2
+                        <figure><img src="./img/인기2.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        3
+                        <figure><img src="./img/인기3.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        4
+                        <figure><img src="./img/인기4.jpg" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        5
+                        <figure><img src="./img/인기5.jpg" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        6
+                        <figure><img src="./img/인기6.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        7
+                        <figure><img src="./img/인기7.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        8
+                        <figure><img src="./img/인기8.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        9
+                        <figure><img src="./img/인기9.jpg" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        10
+                        <figure><img src="./img/인기10.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        11
+                        <figure><img src="./img/인기11.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        12
+                        <figure><img src="./img/인기12.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        13
+                        <figure><img src="./img/인기13.png" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                        14
+                        <figure><img src="./img/인기14.jpg" alt=""></figure>
+                        <figcaption>[종가집]
+                            종가집
+                        </figcaption>
+                    </div>
+                    
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+
+
+        <script src="../js/jquery-3.6.0.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+       
+         
+
+            var swiper2 = new Swiper(".mySwiper2", {
+                slidesPerView: 4,
+                slidesPerGroup:4,
+                spaceBetween:30,
+                loop: true,
+                loopFillGroupWithBlank: true,
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Comfortaa:wght@500&family=Libre+Baskerville&family=Noto+Sans:wght@700&family=Sacramento&family=Twinkle+Star&display=swap');
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{overflow: hidden;}
+.slideshow{width: 100%;height: 100vh;}
+.slideshow:after { 
+    width: 100%;
+    height: 100vh;
+    content: '';
+    background: transparent url(./img/pattern.png) repeat top left;
+    position:absolute;
+}
+.slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 55%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 42s linear infinite 0s;
+}
+.slideshow li span img{width: 100%; height: 100vh;}
+.slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+    animation: titleAnimation 42s linear infinite 0s;
+}
+.slideshow li div h3 { 
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 70px;
+    padding: 0 30px;
+    line-height: 80px;
+    color: #ffffff;
+}
+
+.slideshow li div h3 b{color:#FFF; display: inline-block;font-size: 60px;}
+.slideshow li div h3 b.cursive{font-family: 'Dancing Script', cursive;} 
+.slideshow li div h3 b.cam{font-family: 'Sacramento', cursive;color: rgb(241, 68, 68);font-weight: 600;}
+.slideshow li div h3 b.aurora{font-family: 'Comfortaa', cursive;color: rgb(196, 53, 196);}
+.slideshow li div h3 b.seed{font-family: 'Twinkle Star', cursive;color: rgb(255, 255, 71);}
+.slideshow li div h3 b.mw{font-family: 'Barlow', sans-serif;color: rgb(196, 53, 196)}
+.slideshow li div h3 b.rain{font-family: 'LeferiPoint-WhiteObliqueA';color: skyblue;font-weight: 600;}
+.slideshow li div h3 b.tea{font-family: 'Libre Baskerville', serif;}
+.slideshow li:nth-child(1) span { background-image: url(./img/beach.png) }
+.slideshow li:nth-child(2) span { 
+    background-image: url(./img/flower.png);
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url(./img/milkyway.png);
+    animation-delay: 12s; 
+}
+.slideshow li:nth-child(4) span { 
+    background-image: url(./img/star.png);
+    animation-delay: 18s; 
+}
+.slideshow li:nth-child(5) span { 
+    background-image: url(./img/garden.png);
+    animation-delay: 24s; 
+}
+.slideshow li:nth-child(6) span { 
+    background-image: url(./img/teabar.png);
+    animation-delay: 30s; 
+}
+.slideshow li:nth-child(7) span { 
+    background-image: url(./img/yeosu.png);
+    animation-delay: 36s; 
+}
+
+.slideshow li:nth-child(2) div { animation-delay: 6s; }
+.slideshow li:nth-child(3) div { animation-delay: 12s; }
+.slideshow li:nth-child(4) div { animation-delay: 18s; }
+.slideshow li:nth-child(5) div { animation-delay: 24s; }
+.slideshow li:nth-child(6) div { animation-delay: 30s; }
+.slideshow li:nth-child(7) div { animation-delay: 36s; }
+
+
+@keyframes imageAnimation { 
+    0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1) rotate(3deg);
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(1.1) rotate(3deg);
+	}
+	100% { opacity: 0 }
+}
+
+
+@keyframes titleAnimation { 
+    0% {
+	    opacity: 0;
+	    transform: translateX(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	19% {
+	    opacity: 0;
+	    transform: translateX(-400px);
+	}
+	25% { opacity: 0 }
+	100% { opacity: 0 }
+}
+
+.container{position: relative;}
+.container header{
+	padding: 10px;
+	margin: 0px 20px 10px 20px;
+	position:absolute;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: left;
+    z-index: 999;
+}
+.container header h1{
+	line-height: 35px;
+	position: relative;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 0px 5px 0px;
+    margin-left: -100px;
+    margin-top: -30px;
+}
+header h1 img{width: 80%;}
+.container header h2{
+	font-size: 18px;
+	font-style: none;
+	color: #f8f8f8;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    margin-top: -20px;margin-left: 10px;
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .slideshow li span{
+	opacity: 1;
+}
+
+@media screen and (max-width: 1140px) { 
+    .slideshow li div h3 { font-size: 50px; line-height: 50px;}
+    .slideshow li div h3 b{font-size: 80px}
+}
+@media screen and (max-width: 600px) { 
+    .slideshow li div h3 { font-size: 25px; line-height: 25px; }
+    .slideshow li div h3 b{font-size: 40px}
+}

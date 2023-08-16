@@ -1,0 +1,40 @@
+section#sect1{width: 1186px;height: 800px; margin: 100px auto; position: relative;}
+a{display: block;}
+.flex{display: flex;}
+h2{position: absolute;left:-50px;top:-68px; font-size: 30px;
+z-index: 10;}
+h2 b{font-size: 15px; display: block;}
+.boardinner{height: 560px;justify-content: space-between; }
+.col1{width: 870px;position: relative;}
+
+.txt1{font-size: 15px;padding: 5px;display: flex;justify-content: center;}
+.txt2{font-size: 24px;padding: 5px;text-indent: 20px;}
+
+.col2{width: 360px; background-color: blanchedalmond;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.bg li{position: absolute;}
+
+span.underline{position: absolute; bottom: -1px;
+    right: 0;
+    height: 2px; background: #000;width: 0px;
+    transition: .5s;
+    left: 50%;transform: translateX(-50%);
+}
+span.underline.on{width: 300px;}
+
+
+
+.menu li{height: 116px;position: relative; width: 228px;border-bottom: 1px solid grey;}
+
+.menu li a{position: absolute;
+width: 228px; 
+right: 22px;bottom: 0;}
+span.title{position: relative;}
+.title::after{content: url(./img/arr_btnTxt4.png);
+position: absolute; right:10px;
+opacity: 0;transition: .5s;}
+.title.on::after{right: -30px;opacity: 1;}
+

@@ -1,0 +1,71 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;color: #333;}
+body{color: #333;background: #fff;}
+.flex{display: flex;justify-content: space-between;
+    align-items: center;
+height: 100px;}
+
+
+/* header */
+header{height: 100px;}
+nav{width: 56%;}
+nav a{display: block;}
+li.main{flex: 1;position: relative;}
+li.main>a{text-align: center;padding: 10px 0;}
+/* a는 인라인 엘리먼트 이기 때문에 너비가 잡히지 않음 */
+
+
+li.main:hover>a{background: #aaa;}
+/* 메인 메뉴에 마우스를 올리면 해당메인메뉴 하위에 있는 서브 메뉴를 보여라 */
+li.main:hover .sub{display: block;}
+/* 기본 position:static 은 높이값이 있어서 보였다 안보였다하면 하위 컨덴츠를 밀었다가 올려다가 한다. */
+/* 때문에 sub 메뉴는 position:을 absolute 로 해서 붕~~~띄운다 */
+/*  absolute 속성은 덱스트 크기만큼을 width 값으로 설정하기 때문에 부모의 영역에 가득차기 위해 반드시 width지정한다 */
+ul.sub{display: none; position: absolute; width: 100%;background: #fff;}
+
+ul.sub li:hover a{background: #eee;}
+
+
+
+
+/*  slide */
+.slidewrap{height: 300px;overflow: hidden;}
+.slide{height: 300px;overflow: hidden; position: relative;}
+.slide img{width: 100%; }
+.slide h3{position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+background: rgb(0,0,0,5);padding: 10px;z-index: 10;
+color: #fff;}
+
+
+/* contents */
+.contents{height: 200px;}
+.board,.banner,.link{width: 33%;}
+.board{position: relative;}
+.boardinner{width: 100%;}
+.board ul.menu li{display: inline-block;}
+
+
+.contents img{width: 100%;  vertical-align: top;}
+.notice, .gallery{position: absolute;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{height: 100px;}
+.wrap{width: 1200px;margin: auto;}
+.wrap>*{border: 1px solid black;}
+

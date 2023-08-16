@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./index2.css">
+
+</head>
+
+<body>
+    <section>
+        <article class="on">
+            <h2></h2>
+            <img src="./img/1.png" alt="">
+        </article>
+        <article>
+            <h2></h2>
+            <img src="./img/2.png" alt="">
+        </article>
+         <article>
+            <h2></h2>
+            <img src="./img/3.png" alt="">
+        </article>
+        <article>
+            <h2></h2>
+            <img src="./img/4.png" alt="">
+        </article>
+       
+        <article>
+            <h2></h2>
+            <img src="./img/5.png" alt="">
+        </article>
+    </section>
+    <h1>0</h1>
+    <ul class="scrollNav">
+        <li class="on">article1</li>
+        <li>article2</li>
+        <li>article3</li>
+        <li>article4</li>
+        <li>article5</li>
+    </ul>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+$('.scrollNav li').on('click',function(){
+    let idx=$(this).index()
+    $('html').stop().animate({'scrollTop':5000*idx},1500)
+})
+
+$(window).on('scroll',function(){
+    let scrTop=$(this).scrollTop()
+    $('h1').text(scrTop)
+    $('section article').eq(0).css('transform','translateZ('+scrTop+'px)')
+    $('section article').eq(1).css('transform','translateZ('+(-5000+scrTop)+'px)')
+    $('section article').eq(2).css('transform','translateZ('+(-10000+scrTop)+'px)')
+    $('section article').eq(3).css('transform','translateZ('+(-15000+scrTop)+'px)')
+    $('section article').eq(4).css('transform','translateZ('+(-20000+scrTop)+'px)')
+   
+
+})
+
+    </script>
+</body>
+</html>

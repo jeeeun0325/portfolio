@@ -1,0 +1,169 @@
+a{display: block;}
+$primaryColor:#00833f;
+$primaryTextColor:#555;
+$secondaryTextColor:#fff;
+$borderColor:#e4e0dd;
+
+header{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    .inner{
+        height: 70px;
+        width: 1020px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        nav{
+            
+        >ul{display: flex;justify-content: space-between;
+        li.main{position: relative;width: 140px;
+            text-align: center;
+            >a{font-size: 18px;
+            &:hover{color: $primaryColor;}}
+        ul.sub{position: absolute;width: 140px;
+            top: 50px;
+            li{padding: 10px;}
+            a{font-size: 14px;color: #8a8a8a;
+                &:hover{color: $primaryColor;}
+            }
+            display: none;
+            
+        }
+    }
+        }
+    }
+    h1{
+        img{width: 60px;}
+    }
+    .search{ 
+        img{width: 22px;}
+    }
+
+
+    z-index: 20;}
+    .fullBg{position: absolute;
+        background: #eee;
+        width: 100%;
+        height: 210px;
+        z-index: 10;
+        top: 70px;
+        display: none;
+    }
+}
+
+    .slideContainer{
+        width: 100%;overflow: hidden;
+
+        .slideWrap{width: 300%;display: flex;
+            img{width: 100%;}}
+.slide{
+    img{vertical-align: top;}
+}
+    }
+    
+
+.slideMenu{width: 980px;margin: auto;margin-top: 50px;
+        ul{display: flex;text-align: center;justify-content: center;
+         li{padding: 20px;
+        &:hover{h3{color: $primaryColor;}
+    p{color: #6f6f6f;}} 
+    }
+         .view{padding: 10px; width: 170px;margin: auto;color: $primaryColor;border: 1px solid $primaryColor;cursor: pointer;background: transparent;border-radius: 50px;
+        
+    &:hover{
+        background:$primaryColor;
+        color: $secondaryTextColor ;
+        
+    }
+}
+.view.on{background:$primaryColor;
+    color: $secondaryTextColor ;}
+h3,p{color: #9e9e9e;padding: 10px;font-size: 14px;width: 230px;}
+  p{padding-bottom: 20px;}      
+
+}
+        
+   }
+   
+
+// item1
+.visual img{width: 100%;}
+h2.subTit{text-align: center; 
+    font-size: 50px;
+    margin: 50px auto;
+    font-family: 'batang';
+    border-bottom: 1px solid $borderColor;
+    width: 1020px;
+    padding-bottom: 50px;
+em{
+    font-family: 'verdana';
+    display: block;
+    font-size: 20px;font-style: normal;font-weight: 500;
+    margin: 10px 0;
+}
+}
+.itemBox{
+    .itemList{
+        width: 1020px;
+    margin: auto;
+    display: flex;justify-content: space-between;flex-wrap: wrap;
+    >li{
+        height: 360px;width: 238px;
+    border: 1px solid $borderColor;
+    margin: 20px 0;
+    img{width: 100%;}
+}
+}
+h3{text-align: center;padding: 20px 0;}
+.view{
+    padding: 10px;width: 58%;height: 36px;margin: auto;color: $primaryColor;border: 1px solid $primaryColor;cursor: pointer;background: transparent;border-radius: 50px;text-align: center;
+    &:hover{
+        background:$primaryColor;
+        color: $secondaryTextColor ;
+        
+    }
+}
+}
+
+.itemDetailBox{
+    position: relative;
+    
+    height: 0;
+    overflow: hidden;
+    
+    a.close{position: absolute;right: 420px;top: 20px;z-index: 100;}
+    .itemDetail{
+        position: absolute ;width: 1020px;;left: 50%;transform: translateX(-50%);
+        padding: 20px;.flex{display: flex;align-items: center;}
+        .col1{width: 510px;
+            
+        ul.itemTab li{display: none;}
+    ul.itemTab li.on{display: block;}
+    img{width: 338px;}
+}
+        .col2{width: 460px;
+            h3{font-size: 52px;padding: 50px 0;text-align:left;
+            b{display: block;font-size: 30px;}}
+        .thumb{display: flex;justify-content: space-between;
+            li{ cursor: pointer;}
+            img{width: 94px;background: #fff;}
+            p{font-size: 14px;text-align: center;color: $secondaryTextColor;line-height: 1.2;padding-top: 10px;}
+        }}
+        .itemsubSummary {
+            ul.desc li{display: none; 
+            
+    }  
+    ul.desc li.on{display: block;
+    } 
+     h4{font-size: 20px; padding-bottom: 20px;}
+        p{font-size: 16px;padding-bottom: 50px;line-height: 1.5;}   
+    }   
+    }
+}
+.green{background: $primaryColor;
+    h3,h4,p{color: $secondaryTextColor;}}
+.grey{background: #e7e7e7;
+h3,h4,p{color: #000;}
+}

@@ -1,0 +1,118 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+
+
+body{font-family: 'Noto Sans KR', sans-serif;;
+    line-height: 1.2;height: 100vh;}
+.covid{height: 35px;color: #fff;position: relative;background: #432f31;}
+.covid p{position: absolute;left: 50%; top: 50%;transform: translate(-50%,-50%);}
+.covid p span{color: #fff;font-size: 13px;display: inline-block;}
+.covid a{position: absolute;right: 30px;color: #fff;font-size: 18px;top: 50%;transform: translateY(-50%);}
+header{width: 100%;;background: rgba(255, 255, 255, 0.918);position: fixed;z-index: 300;top: 0;}
+.headerTop{display: flex;justify-content: space-between;align-items: center;height: 40px;border-bottom: 1px solid #eee;padding:0 10px;}
+.headerTop ul.gnb{display: flex;justify-content: space-between;}
+.headerTop ul.gnb li{margin: 10px;position: relative;}
+.headerTop ul.gnb li a{color: #666;font-size: 14px;}
+.headerTop ul.gnb li::after{content: '';width: 1px;height: 12px;background: #666;position: absolute;top: 5px;right: -10px;}
+.headerTop ul.gnb li:last-child:after{display: none;}
+.headerDown{height: 80px;width: 100%;position: relative;}
+.headerDown nav{position: absolute;left: 50%; top: 50%;transform: translate(-50%,-50%);;}
+.headerDown .rewards{position: absolute;right: 1%; top: 50%;transform: translateY(-50%);background: #ad9e87;padding: 10px;}
+.headerDown .rewards a{color: #fff;}
+.headerDown nav ul{display: flex;}
+nav ul li{padding: 10px;}
+nav ul li a{font-size: 18px;}
+nav ul li a span{width: 17px;height: 17px;background: url(./img/icon-search.png);display: inline-block;vertical-align: middle;}
+section{width: 100%;height:100vh;position: relative;}
+/*  */
+#sect1 h2{width: 100%;height: 100%;}
+.swiper-wrapper  .swiper-slide:nth-child(1){background: url(./img/slide1.jpg);background-size: cover;width: 100%;height: 100%;;;background-position-y: -100px;}
+.swiper-wrapper  .swiper-slide:nth-child(2){background: url(./img/slide2.jpg);background-size: cover;width: 100%;height: 100%;;background-position-y: -100px;}
+.swiper-wrapper  .swiper-slide:nth-child(3){background: url(./img/slide3.jpg);background-size: cover;width: 100%;height: 100%;;background-position-y: -100px;}
+.swiper-slide{position: relative;}
+.txtBox{position: absolute;padding: 20px;top: 40%;left: 9%;}
+.txtBox h2{color: #fff;font-size: 22px;padding-bottom: 10px}
+.txtBox h3{color: #fff;font-size: 54px;padding-bottom: 30px;}
+.txtBox p{color: #fff;font-size: 16px;padding-bottom: 20px;}
+.txtBox a{display: inline-block;;;color: #fff;font-size: 16px;}
+.txtBox a span{padding-left: 10px;}
+.swiper-button-next::after{content: '';background: url(./img/right-arrowwhite.png);width: 35px;height: 35px;background-size: cover;}
+.swiper-button-prev::after{content: '';background: url(./img/left-arrowwhite.png);width: 35px;height: 35px;background-size: cover;}
+/*  */
+#sect2{position: relative;background-image: url(./img/mai-brand-signiel-pc.jpg.thumb.1920.1920.jpg); background-size: cover;background-position: center bottom;transition: .5s;}
+.bg{position: absolute;width: 100%;height: 100%;z-index: -1;top: 0;left: 0;}
+.bg img{width: 100%;}
+.inner{display: flex;flex-wrap: wrap;width: 1536px;margin: auto;justify-content: space-between;position: relative;z-index: 99;}
+#sect2 h2{width: 100%;padding: 97px 0 65px;font-size: 40px;color: #fff;font-weight:400;}
+#sect2:after{content:'' ;position: absolute;width: 100%;height: 100%;background: rgba(0,0,0,.4);left: 0;top: 0;;}
+
+article{width: 334px;transition: .6s;opacity: .4;height: 350px;}
+article.on{opacity: 1;}
+article h3{border-top: 2px solid #fff;cursor: pointer;}
+article.on h3{opacity: 1;;}
+/* article.on .desc{display: block;} */
+
+.desc.width{width: 755px;}
+.desc{line-height: 1.5;display: none;position: absolute; top: 300px;z-index: 10;}
+.desc p{color: #fff;margin-bottom: 50px;font-size: 16px;}
+.desc a{color: #fff;padding: 10px 20px;border: 1px solid #fff;font-size: 14px;transition: .5s;}
+.desc a:hover{background: #fff;color: #000;transition: .5s;}
+.desc a span{padding-left: 10px;}
+.desc.right{text-align: right;width: 450px;position: absolute;right: 0;}
+
+.detail{position: absolute;z-index: 200;top:200%;width: 100%;;background: #fff;display: none;}
+button{background: none;border: none;}
+a.close {position: fixed;top: 130px;right: 10px;z-index: 999;font-size: 35px;display: none;}
+/* footer */
+footer{width: 100%;}
+.footer1{background-color: #555;}
+.footerInner{width: 1576px;margin: auto;display: flex;justify-content: space-between;padding:10px 30px}
+.footer1 ul{display: flex;align-items: center;}
+ul.hotel li{margin-right: 30px;}
+ul.hotel li:hover a{opacity: .4;;}
+ul.sns li{margin-left: 20px;}
+ul.sns li a{height: 22px;display: block;opacity: .4;}
+ul.sns li a:hover{opacity: 1;}
+ul.sns li a img{height: 100%;}
+
+.footer2{background: #111;color: #999;padding: 50px 0;}
+.ftLeft h2{padding-bottom: 50px;}
+.ftLeft ul li{font-size: 15px;line-height: 1.5;}
+.ftRight{display: flex;}
+.ftRight ul{border-right: 1px solid #a7a7a756;margin-right: 30px;}
+.ftRight ul:last-child{border-right: none;}
+.ftRight ul li{padding-bottom: 20px;}
+.ftRight a{display: block;color: #a7a7a7;font-size: 14px;width: 150px;}
+.ftRight a:hover{color: #fff;}
+.footer3{border-top: 1px solid #3e3e3e;background: #111;padding: 20px 0}
+ul.ftMenu{display: flex;align-items: center;}
+ul.ftMenu li{display: flex;padding-right: 40px;position: relative;}
+ul.ftMenu li:after{content: '';width: 1px;height: 13px;background-color: #a7a7a7;position: absolute;right: 20px;top: 4px;opacity: .4;}
+ul.ftMenu li:last-child::after{display: none;}
+ul.ftMenu a{color: #a7a7a7;font-size: 15px;}
+select{background: none;color: #a7a7a7;padding: 10px;}
+/* 시그니엘호텔 */
+h2.tit{text-align: center;font-size: 40px;padding: 50px;}
+p.sig{text-align: center;padding: 50px;font-size: 18px;}
+.signielBg{width: 100%;height: 810px;background:url(./img/시그니엘.jpg);}
+.lottehotelBg{width: 100%;height: 810px;background:url(./img/롯데호텔.jpg);}
+.l7Bg{width: 100%;height: 810px;background:url(./img/l7.jpg);}
+.cityBg{width: 100%;height: 810px;background:url(./img/city.jpg);}
+.world{padding: 50px 0;border-top: 1px solid #eee;border-bottom: 1px solid #eee}
+.kor{display: flex;padding-top: 20px;}
+.kor h3{font-size: 18px;font-weight: 500;width: 150px;}
+.kor h3 span{color: #ad9e87;}
+.kor ul{display: flex}
+.kor ul li a{font-size: 18px;color: #666;}
+.kor ul li {padding:0 10px ;}
+.wrap{width: 1400px;margin: auto;}
+ul.signiel{display: flex;justify-content: space-between;padding-bottom: 150px;} 
+ul.signiel li{width: 32%;} 
+ul.signiel li figure{width: 100%;} 
+ul.signiel li figcaption h3{font-size: 20px;padding: 10px;font-weight: 600;} 
+ul.signiel li figcaption p{padding: 10px;font-size: 16px;}
+ul.signiel img{width: 100%;} 
+.txt{text-align: center;padding-bottom: 100px;}
+.txt p{font-size: 18px;}
+.txt h2{padding: 50px;}

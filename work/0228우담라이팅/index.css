@@ -1,0 +1,98 @@
+a{display: block;}
+/* header */
+header{height: 110px;display: flex; align-items: center;padding:0 40px;}
+header nav{width: 45%;
+    margin-left: 100px;}
+header nav>ul{display: flex;align-items: center;height: 110px;}
+li.main{flex:1;position: relative}
+li.main>a{font-weight: bold;text-align: center;padding: 47px 0;}
+.sub{position: absolute;background: #fff;z-index: 1;top: 110px;
+    width: 100%;border-top: 4px solid #f47a20;display: none;}
+.sub li{width: 90%;;border-bottom: 1px solid #e8e8e8;margin: 0 7px;}
+.sub li:last-child{border-bottom: none;}
+.sub a{padding: 10px;color: #848484;font-size: 13px;font-weight: bold;}
+.sub li:hover a{color: #f47a20;}
+
+
+/* sect1 */
+#sect1{height: 100vh;background-image: url(./img/bg_visual.jpg);background-attachment: fixed;position: relative;z-index: -10;}
+
+.tit{font-size: 50px;line-height: 78px;letter-spacing: 0.560em;color: #fff;;text-align: center;
+position: fixed;width: 100%; padding-top: 60px;z-index: -1;
+   }
+.tit h2{font-size: 20px;;opacity: .5;background-image: url(./img/bracket_title.png);background-position: center;background-repeat: no-repeat;letter-spacing: 0.550em;}
+.tit b{color: #f47a20;border-bottom: 1px solid #f47a20;}
+
+/* sect2 */
+#sect2{position: relative;height: 880px;}
+.swiper nav{position: absolute;top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    z-index: 100;}
+.btn{width: 100px;}
+.btn li{width: 100px;height: 100px;display: flex;align-items: center;justify-content: center;background-image: url(./img/bg_quick.png);}
+.btn a{color: #b6b6b6;line-height: 1.5;}
+nav span{display: block; background:#f47a20;width: 100px;height: 100px;}
+.txt {
+    position: absolute;
+    top: 16%;
+    left: 15%;
+    z-index: 10;
+    color: #fff;
+}
+.txt h2{font-size: 28px;background-image: url(./img/point_pf_title.png);background-repeat: no-repeat;width: 162px;height: 23px;text-align: center;line-height: 0.8;}
+.txt h3{font-size: 30px;padding: 45px 0;}
+.txt p{font-size: 14px;line-height: 23px;opacity: .7;}
+.btn li:hover a{color:#f47a20;}
+.btn li.on a{color:#f47a20;}
+/* banner */
+.banner{height: 530px;min-width: 1000px;display: flex;z-index: 100;}
+.ban1{background-image: url(./img/bg_bnr_1.jpg);width: 35%;}
+.ban1txt{padding: 70px;position: relative;}
+.ban1 h2{font-size: 40px;color: #fff;line-height: 1.2;padding-bottom: 20px;}
+.ban1 h2::before{content: '';width: 30px;height: 1px;background: #fff;position: absolute;top: 60px;left: 76px;}
+.ban1 p{font-size: 14px;color: #929292;line-height: 1.5;}
+.ban2{background-image: url(./img/bg_bnr_2.jpg);width: 65%;}
+.ban2txt{text-align: center;padding-top: 100px;}
+.ban2 h2{font-size: 34px;color: #fff;padding-bottom: 20px;}
+.ban2 h3{font-size: 45px;color: #fff;padding-bottom: 50px;}
+.ban2 p{font-size: 14px;color: #929292;line-height: 1.5;padding-bottom: 50px;}
+.button{display: flex;justify-content: center;}
+.button li{padding: 0 5px;}
+.button a{padding: 10px 20px;color: #fff;opacity: .7;border: 1px solid #fff;font-size: 14px;}
+.button a:hover{opacity: 1;}
+
+.bg{background-image: url(./img/banner_product.png);position: absolute;z-index: 30;width: 900px;height: 530px;left: 2.5%;}
+
+
+/* board */
+.board{height: 100px;display: flex;}
+.board1,.board2{width: 50%;display: flex;align-items: center;}
+.board1{border-right: 1px solid #f3f1f4;}
+.board p{color: #b6b6b6;padding: 0 20px;position: relative;}
+.board p::before{content: '';width: 1px;height: 15px;background: #b6b6b6;position: absolute;left: 10px;}
+
+
+/* footer */
+footer{height: 300px;background: #f3f1f4;display: flex;}
+.ft1{width: 100%;height: 250px;padding: 50px;display: flex;}
+.cen{height: 200px;padding-right: 50px;border-right: 1px solid #e3e1e4;}
+.cen ul{display: flex;padding: 10px 0;}
+.cen ul li{padding-right:  8px;}
+.cen ul a{background-color: #333;border-radius: 50%;}
+.company{margin-left: 50px;}
+.cp{display: flex;padding-bottom: 30px;}
+.cen h3{font-size: 18px;color:#6c6c6c ;margin-bottom: 5px;}
+.cen h4{font-size: 22px;color:#2c2c2c;margin-bottom: 20px;}
+.cen p{font-size: 22px;color:#2c2c2c;;}
+.cen p span{display: block; font-size: 34px;color:#2c2c2c;;margin-bottom: 15px;}
+.cen b{font-size: 14px;color:#6c6c6c ;;}
+.company{font-size: 14px;color: #6c6c6c;line-height: 1.2;}
+.com1 h2{font-size: 20px;color: #2c2c2c;}
+.com1 h3{padding: 5px 10px;}
+.com2 h3{width: 80px;color: #2c2c2c;}
+.ft1{position: relative;}
+.port{position: absolute;top: 50px;right: 50px;text-align: center ;}
+.pftxt{position: absolute;top: 40%;left: 50%;transform: translate(-50%,-50%);width: 120px;}
+.pf{font-size: 12px;color: #626262;border: 1px solid #3d3d3d;display: inline-block;padding: 5px;margin-bottom: 30px;}
+.night{color: #fff;font-size: 18px;line-height: 1.2;}

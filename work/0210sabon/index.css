@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{padding: 0 1%;line-height: 1.2;}
+.contentwrap{margin: auto;}
+a{display: block;}
+
+/* 헤더 */
+header{margin: auto;padding: 20px;background-color: rgb(252, 244, 235);}
+header .inner{width: 100%; display: flex;align-items: center;justify-content:space-between;width: 100%;margin: auto;}
+.inner ul{display: flex;}
+.gnb li{margin:5px}
+
+/* nav */
+nav{text-align: center;padding: 5px 0;}
+nav ul{display: flex;}
+.mainmenu{background-color: rgb(124, 109, 90);padding: 10px;border: 1px solid #fff;}
+.mainmenu a{color: #fff;font-weight: lighter;}
+.mainmenu:hover {background-color:rgb(194, 176, 152) ;}
+
+/* slide */
+.slidewrap{width: 100%;position: relative;padding-top:37%;}
+/*슬라이드에 높이를 안정해주면 아래 컨텐츠가 먹힘
+그래서 이미지 높이/가로 로 배율을 정해서  padding top을 지정해주던가 height:37vh으로 지정  */
+.slide{width: 100%;position: absolute;top:0}
+.slide img{width: 100%;}
+
+/* 상품 */
+main{padding-top: 50px;}
+.pro ul{display: flex;flex-wrap: wrap;;}
+.pro figure{padding: 10px 0;}
+.pro img{width: 320px;}
+
+.title{font-weight: bold;padding: 5px 0;}
+.price{color: #714633;font-weight: 600
+    ;}
+    .tit{width: 100%;display: flex;justify-content: center;}
+.pro h2,.promo h2{display: inline-block;
+    font-family: 'GowunBatang-Bold';color: #54301a;text-align: center;border-bottom:2px solid #54301a;padding-bottom: 20px;font-weight: bold;}    
+
+/* 프로모션 */
+.promo{padding: 30px 0;}
+.promo ul{padding-top: 30px;}
+.promo ul{display: flex;}
+/* 푸터 */
+footer{background: #322b27;margin-top: 20px; line-height: 1.5;}
+.footerinner{display: flex;color: #fff;font-weight: lighter;}
+.copy ul{display: flex;flex-wrap: wrap;}
+
+.copy span{padding:0 10px;}
+
+/* mobile */
+@media only screen and (max-width: 500px){
+    header h1 img{width: 60%;}
+    nav ul{ flex-wrap: wrap;}
+      nav li{width: 50%;}
+      .pro  ul li{width: 50%;}
+      .pro ul{text-align: center;}
+.pro figure img{width: 200px;}      
+.promo ul{display: flex;flex-direction: column;text-align: center;}
+.pro h2,.promo h2{font-size: 25px;}
+
+footer{height: 300px;}
+.footerinner{height: 100%; flex-direction: column;text-align: center; justify-content: center;}
+.copy{font-size: small;}
+.copy ul{justify-content: center;}
+.copy span{display: none;}
+.copy li{padding:0 5px;}
+.copy h3{font-size: 15px;}
+.copy{padding: 10px ;}
+}
+    
+/* tb */
+@media only screen and (min-width: 501px) {
+    .mainmenu{flex:1}
+  .mainmenu a{font-size: 14px;}
+  .pro ul{flex-direction: column;}
+.pro ul li{display: flex; align-items: center;}
+.pro h2,.promo h2{font-size: 30px;}
+.promo ul{flex-wrap: wrap;justify-content: center;}
+.promo li{width: 48%;margin: 5px;}
+.promo img{width: 100%;transition: .5s;}
+.promo ul li:hover img{transform: translateY(15px);}
+figcaption{margin-left: 20px;}
+
+footer{height: 200px;}
+.footerinner{height: 200px;align-items: center;justify-content: space-between;}
+.copy{font-size: 15px;}
+.copy h3{padding:0 8px;}
+.copy span{display: none;}
+.copy li{padding: 0 8px;}
+    }
+/* pc */
+@media only screen and (min-width: 980px) {
+    .contentwrap{max-width: 1200px;}
+    header .inner,.footerinner{max-width: 1200px;margin: auto;}
+    
+.mainmenu{flex:1}
+
+.pro h2,.promo h2{font-size: 40px;}
+.pro ul{flex-direction: row;}
+.pro ul li{width: 32%;display: flex;flex-direction: column;padding: 20px;}
+figcaption{width: 80%;}
+
+.promo ul li{width: 32%;margin-right: 10px;}
+.promo img{width: 100%;transition: .5s;}
+.promo ul li:hover img{transform: translateY(15px);}
+
+footer{height: 200px;}
+.copy{width: 80%;padding:0 20px;}
+.copy span{display: inline-block;}
+.copy li{padding: 0;}
+.footerinner{height: 200px;align-items: center;justify-content: space-between;}
+
+
+
+    }

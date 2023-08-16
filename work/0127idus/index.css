@@ -1,0 +1,52 @@
+.wrap{width: 1050px; margin: auto;}
+.flex{display: flex;}
+a{display: block;}
+img{vertical-align: top;}
+/* 헤더 */
+header{width: 1050px; height: 200px; padding-top: 50px;}
+header h1 img{width: 150px;height: 60px;}
+nav{width: 1020px; padding-top: 30px;}
+nav ul{width: 100%; justify-content: space-around;}
+li.main{width: 150px;position: relative;}
+li.main>a{font-size: 24px;font-weight: bold;padding: 10px; text-align: center;}
+li.main:hover>a{background: orange;color: #fff;}
+
+ul.sub a{z-index: 50;padding: 10px;font-size: 18px; background: #fff;cursor: pointer;}
+ul.sub li:hover a{background: orange;color: #fff;}
+ul.sub{z-index: 999;position: absolute;display: none;}
+
+
+
+
+/* 슬라이드 */
+.slidewrap{height: 525px;position: relative;}
+.slide{width: 1050px;height: 525px; position: absolute;}
+.slide img{width: 1050px;}
+
+/*  */
+.desc{width: 1000px;height: 597px;margin: auto; position: relative; margin-top: 50px;}
+.desc figure{position: absolute;}
+.left1{left: 0;}
+.left2{left:202px}
+.left3{left:403px}
+.left4{left:606px}
+.left5{left:807px}
+
+.top1{top:0}
+.top2{top:202px}
+.top3{top:404px}
+
+/* 추천 */
+.rec{width: 1050px;height: 800px;padding: 50px 0; margin: auto;}
+.rec h2{padding: 10px;font-size: 20px;border-bottom: 1px solid gray;margin-bottom: 20px;}
+.desc2{width: 100%; flex-wrap: wrap;justify-content: center;}
+.desc2 figure{width: 250px;}
+.desc2 img{width: 250px;height: 250px;padding: 8px;}
+span.per{color: rgb(231, 112, 112);}
+.desc2 figure b{font-weight: bold;}
+
+/* 푸터 */
+footer{width: 1050px;height: 100px; margin: auto; border-top: 1px solid gray;padding: 20px;}
+
+.copyright{width: 700px;}
+.copyright ul,p{text-align: center;padding: 5px 0;}

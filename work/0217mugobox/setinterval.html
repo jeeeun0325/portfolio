@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="time">00:00:00</div>
+
+
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+
+function timeAuto(){
+let d=new Date()
+$('#time').text(d.toLocaleString())
+
+}
+let time=setInterval(timeAuto,100)
+$('#time').mouseenter(function(){
+clearInterval(time)
+
+
+})
+$('#time').mouseleave(function(){
+    time=setInterval(timeAuto,100)
+})
+
+
+    </script>
+</body>
+</html>

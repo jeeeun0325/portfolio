@@ -1,0 +1,47 @@
+.contentImg{
+    max-width:980px ;
+    border: 1px solid #000;
+    margin: auto;
+    }
+    .contentImg img{width: 100%;}
+    .fullBg{
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    #sect1{position: relative;color:#fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    text-align: center;
+    }
+    #sect1 p.summary,
+    #sect1 p.date{font-size: 3vw;}
+     
+    h1{font-size:6vw}
+    
+    .intro{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    
+    #sect1.fullBg{background-image: url(https://www.w3schools.com/w3images/wedding_couple.jpg);}
+    #sect2 article.fullBg{background-image: url(https://www.w3schools.com/w3images/flowers.jpg);}
+    
+    
+    nav{position: fixed;
+        background: #ddd;
+        left:0;bottom:0;
+        width: 100%;
+        
+    }
+    nav ul{display: flex;
+        justify-content: space-between;
+    }
+    nav ul li{flex: 1;text-align: center;
+    padding:15px 0}

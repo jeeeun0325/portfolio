@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+<style>
+.box{width: 300px;margin: auto;}
+.box img{width: 100%;border: 5px solid #000;}
+.btn{display: flex;}
+button{display: block;width: 100%;cursor: pointer;padding: 10px;}
+
+</style>
+
+</head>
+<body>
+    <div class="box">
+        <img src="./img/boy.png" alt=""class="avata">
+
+    <button >소녀</button>
+
+    </div>
+<script src="../js/jquery-3.6.0.js"></script>
+<script>
+    let sw=0
+
+$('button').click(function(){
+sw=!sw
+console.log(sw)
+if(sw){
+$('img').attr({'src':'./img/girl.png'})
+$('button').text('소년')
+}else{
+    $('img').attr({'src':'./img/boy.png'})
+    $('button').text('소녀')
+
+}
+
+})
+
+
+</script>
+
+</body>
+</html>

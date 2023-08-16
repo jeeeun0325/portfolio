@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bayclub</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./index.css">
+    <style></style>
+</head>
+
+<body class="bg0">
+    <div class="bar"><i class="fa fa-bars"></i></div>
+
+    <div class="wrap">
+        <nav>
+            <h1><img src="./img/logo_01.png" alt=""></h1>
+            <ul>
+                <li><a href="#art1" class="on">MAIN</a></li>
+                <li><a href="#art2">FACILITY</a></li>
+                <li><a href="#art3">BAYCLUB</a></li>
+            </ul></nav>
+        <section class="">
+            <article class="on" id="art1">
+                <div class="col1 row1"><video src="./img/2964583835.mp4" autoplay loop muted></video></div>
+                <div class="col5 row1">
+                    <div class="text">
+                        <h2>RESERVATION</h2>
+                        
+                    </div>
+                </div>
+                <div class="col7 row1">
+                    <div class="text">
+                        <h2>ACCMODATION</h2>
+                        
+                    </div>
+                </div>
+                 <div class="col5 row2"><img src="./img/logo_02.png" alt="">
+                 </div>
+
+                <div class="col7 row2"></div>
+                <div class="col1 row3">
+                    <div class="text">
+                        <div class="tbox">
+                            <h2>KOREAN NO.1 POOLVILLA RESORT</h2>
+                            <h3>NAMHAE OCEANVIEW RESORT</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4 row3">
+                    <div class="text">
+                        <div class="tbox">
+                                <h2>BAY CLUB</h2>
+                                <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은 격이 다른 건축의 미와 <br>
+                                호텔급 서비스를 제공하는 고품격 프라이빗 풀빌라 리조트입니다.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col7 row4"></div>
+                
+            </article>
+            <article  id="art2">
+                <div class="col1 row1">
+                    <div class="img"><img src="./img/swimming.png" alt=""><p class="dim"></p></div>
+                    <h3>SWIMMING POOL</h3></div>
+                <div class="col3 row1">
+                    
+                </div>
+                <div class="col5 row1">
+                    <div class="img"><img src="./img/cafe.png" alt=""><p class="dim"></p></div>
+                    </p><h3>CAFE&LOUNGE</h3></div>
+                 <div class="col7 row1"></div>
+                <div class="col1 row4"></div>
+                <div class="col3 row2">
+                    <div class="img"><img src="./img/confer.png" alt=""><p class="dim"></p></div>
+                    <h3>CONFERNCE ROOM</h3></div>
+                <div class="col5 row4"></div>
+                <div class="col7 row2">
+                    <div class="img"><img src="./img/event.png" alt=""><p class="dim"></p></div>
+                    <h3>EVENT</h3></div>
+            </article>
+            <article  id="art3">
+                <div class="col1 row1"></div>
+                <div class="col2-1 row1"></div>
+                <div class="col4 row1">
+                    <div class="text">
+                        <div class="tbox">
+                                <h2>BEST CUSTOMER SERVICE</h2>
+                                <p>고객분들을 위한 최상의 맞춤형 서비스를 제공합니다.</p>
+                            </div>
+                    </div>
+                </div>
+                 <div class="col6 row1"><video src="./img/exterior.mp4" autoplay loop muted></video></div>
+
+                <div class="col1 row2">
+                    <div class="text">
+                        <div class="tbox">
+                                <h2>SPECIAL INTERIOR DESIGN</h2>
+                                <p>각 객실마다 감각적이고 특징있는 객실 인테리어로<br> 모든 것에 신경을 쓴 섬세함이 감동을 불러일으킵니다.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col3 row2"></div>
+                <div class="col1 row3"></div>
+                <div class="col4 row3">
+                    <div class="text2">
+                        <div class="tbox2">
+                                <h2>L A N D S C A P E</h2>
+                                <p>자세히 보기</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col6 row3"></div>
+                <div class="col7 row3">
+                    <div class="text">
+                        <div class="tbox">
+                                <h2>PRIVATE FACILITY</h2>
+                                <p>프라이빗한 객실안에 꾸며진 부대시설은 <br> 당신의 여행을 프라이빗하게 만들어 드립니다.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col6 row4"></div>
+                <div class="col7-1 row4"></div>
+        
+            </article>
+        </section>
+    </div>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+
+$('.bar').click(function(){
+
+  $('nav').addClass('on')
+ $(this).fadeOut()
+ $('section').addClass('on')
+})
+
+$('nav a').click(function(e){
+    $('nav').removeClass('on')
+    $('.bar').fadeIn()
+
+e.preventDefault()
+$('nav a').removeClass('on')
+$(this).addClass('on')
+
+let href=$(this).attr('href')
+$('article').removeClass('on')
+$(href).addClass('on')
+$('section').removeClass('on')
+let idx=$(this).parents().index()
+$('body').removeClass()
+$('body').addClass('bg'+idx)
+
+
+
+})
+
+    </script>
+</body>
+
+</html>

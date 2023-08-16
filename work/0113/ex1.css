@@ -1,0 +1,40 @@
+.wrap{width: 1652px; margin: auto; ; justify-content: center;
+    background-color: #ffdddd;}
+
+    .section1{ height: 100vh;
+    background-image: url(./image/wedding_couple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative}
+
+section#sect1{width: 100%; height: 100vh;display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;}
+section#sect1 h2{font-weight: 400;font-size: 60px; color: white;}
+section#sect1 h3,b{font-weight: 400;font-size: 40px; color: white;}
+
+    
+.section1 h2{justify-content: center;
+align-items: center;}
+
+.section2{padding: 64px 16px 64px 16px; margin: auto;}
+section#sect2{border: 1px solid black;
+}
+section#sect2>h2{font-size: 40px;color: grey;}
+.section2 article.art2{background-image: url(./image/flowers.jpg);
+    width: 100%; height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+.section3{width: 100%;height: 1016px;
+    padding: 64px 16px 64px 16px;}    
+
+.section4{width: 100%;
+height: 230px;padding: 64px 16px 64px 16px;}
+
+
+    footer{width: 100%;height: 60px;
+    background-color: black; color: white;
+display: flex;
+ justify-content: center; align-items: flex-end;}

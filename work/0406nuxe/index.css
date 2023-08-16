@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{font-family: 'GowunDodum-Regular';}
+body.bg0,body.bg1,body.bg2{background:url(./img/bg1.jpg) no-repeat;background-size: cover;background-position-y: -580px;}
+
+body.bg3{background:url(./img/bg2.jpg) no-repeat;background-size: cover;background-position-y: -580px;}
+body.bg4,body.bg5{background:url(./img/bg3.jpg) no-repeat;background-size: cover;background-position-y: -580px;}
+header{width: 100%;position: fixed;top: 0;left: 0;padding: 30px;display: flex;justify-content: space-between;height: 140px;background: #f6f6f6;align-items: center;}
+header ul{display: flex;}
+header ul li{margin-right: 30px;font-size: 18px;font-weight: 600;cursor: pointer;}
+.nuxe{width: 1100px;margin: auto;}
+.scene{width: 400px;height: 400px;perspective: 600px;}
+.nuxe{display: flex;position: absolute;top: 55%;left: 55%;transform: translate(-50%,-50%);}
+#cube{width: 100%;height: 100%;position: relative;transform-style: preserve-3d;transform: translateZ(-200px);transition: transform 1s;}
+/* 부모의 3d속성을 하위까지 가져가겠다 transform-style: preserve-3d */
+
+.face{width: 100%;height: 100%;font-size: 50px;position: absolute;}
+.face img{width: 100%;}
+.front{background: rgb(245, 214, 214);transform: rotateY(0deg) translateZ(200px)}
+.back{background: rgb(247, 233, 187);transform: rotateY(180deg) translateZ(200px)}
+.right{background: rgb(188, 238, 188);transform: rotateY(90deg) translateZ(200px)}
+.left{background: rgb(186, 227, 240);transform: rotateY(-90deg) translateZ(200px)}
+.top{background: rgb(184, 167, 211);transform: rotateX(90deg) translateZ(200px);}
+.bottom{background: rgb(154, 233, 226);transform: rotateX(-90deg) translateZ(200px)}
+
+#cube.showFront{transform: translateZ(-200px) rotateY(0deg);}
+#cube.showBottom{transform: translateZ(-200px) rotateX(90deg);}
+#cube.showRight{transform: translateZ(-200px) rotateY(-90deg);}
+#cube.showBack{transform: translateZ(-200px) rotateY(-180deg);}
+#cube.showLeft{transform: translateZ(-200px) rotateY(90deg);}
+#cube.showTop{transform: translateZ(-200px) rotateX(-90deg);}
+.nav{position: absolute;top: 140px;background: rgba(0,0,0,.3);height: calc(100vh - 140px);overflow: hidden;}
+.nav li{width: 200px;height: 200px;margin: 20px;cursor: pointer;opacity: .5;color: transparent;}
+.nav li.on{opacity: 1;}
+.nav li:hover{opacity: 1;}
+
+.nav li:nth-child(1){background: url(./img/울트라1.jpg);background-size: 200px 200px}
+.nav li:nth-child(2){background: url(./img/스틱레브르1.jpg);background-size: 200px 200px}
+.nav li:nth-child(3){background: url(./img/핸드앤네일1.jpg);background-size: 200px 200px}
+.nav li:nth-child(4){background: url(./img/필링1.jpg);background-size: 200px 200px}
+.nav li:nth-child(5){background: url(./img/크렘프레쉬1.jpg);background-size: 200px 200px}
+.nav li:nth-child(6){background: url(./img/크렘크림1.jpg);background-size: 200px 200px}
+.proContainer{width: 700px;height: 400px;overflow: hidden;}
+.proWrap{width: 700px;height: 2400px;}
+.pro{width: 700px;height: 400px;background: rgba(255, 255, 255, 0.552);display: flex;}
+.img{width: 400px;}
+.img img{width: 100%;}
+.txtBox{width: 300px;padding: 20px;line-height: 1.1;}
+.desc{padding-top: 20px;;}
+.txtBox h2{font-size: 30px;padding-bottom: 20px;font-weight: 600;border-bottom: 1px solid #eee;margin-bottom: 20px;}
+.txtBox>h3{font-size: 20px;padding-bottom: 20px;}
+.number h3{font-size: 18px;}
+.number h3 span{display: inline-block;font-size: 28px;font-weight: 600;font-style: italic;padding-right: 5px;}
+.desc .number{padding-bottom: 10px;}
