@@ -89,15 +89,15 @@ body{
         height: 50%;
         position: relative;
         overflow: hidden;
-        
         p{
-         position: absolute;
+          position: relative;
          z-index: 1;
          padding:0 20px;
          display: flex;
          align-items: center;
          gap: 20px;
         top: 50%;
+        height: 100%;
         transform: translateY(-50%);
          transition: .5s;
           span{

@@ -697,7 +697,7 @@ body {
 }
 
 #sct2 .workSlide .work-swiper .workwrap p {
-  position: absolute;
+  position: relative;
   z-index: 1;
   padding: 0 20px;
   display: -webkit-box;
@@ -708,6 +708,7 @@ body {
           align-items: center;
   gap: 20px;
   top: 50%;
+  height: 100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: .5s;
