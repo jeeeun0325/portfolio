@@ -57,7 +57,7 @@ window.onload = function() {
 
 // work sldie
 var swiper2 = new Swiper(".work-swiper", {
-  slidesPerView:3,
+  slidesPerView:2,
   spaceBetween: 5,
     pagination: {
         el: "swiper-pagination",
@@ -81,11 +81,11 @@ var swiper2 = new Swiper(".work-swiper", {
         },
       1023: {
         slidesPerView:3,
-  spaceBetween: 5,
+  spaceBetween: 10,
       },
       3000: {
-        slidesPerView:3,
-  spaceBetween: 20,
+        slidesPerView:4,
+  spaceBetween: 10,
       },
     },
 });
