@@ -72,7 +72,11 @@ var swiper2 = new Swiper(".work-swiper", {
     //     el: ".swiper-scrollbar",
     //     hide: false,
     //   },
-      mousewheel: true,
+      //mousewheel: true,
+      navigation: {
+        nextEl: ".next_btn",
+        prevEl: ".prev_btn",
+      },
 
       breakpoints: {
         501: {
