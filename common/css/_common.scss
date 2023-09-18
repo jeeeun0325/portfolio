@@ -18,8 +18,33 @@ header {
     ul{
       gap: 20px;
       color: #fff;
+      li{
+        position: relative;
+        &::after{
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 0%;
+          background: #fff;
+        }
+        a{
+          font-size: 20px;
+        }
+        &.on{
+          &::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: #fff;
+          }
+        }
+      }
     }
   }
+}
+#sct3,#sct4{
+  background: #000;
 }
 section{
   width: 100%;
