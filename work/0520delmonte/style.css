@@ -4,79 +4,55 @@ a {
 
 header {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #eee;
 }
-
 header .inner {
   height: 70px;
   width: 1020px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   z-index: 20;
 }
-
 header .inner nav > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 header .inner nav > ul li.main {
   position: relative;
   width: 140px;
   text-align: center;
 }
-
 header .inner nav > ul li.main > a {
   font-size: 18px;
 }
-
 header .inner nav > ul li.main > a:hover {
   color: #00833f;
 }
-
 header .inner nav > ul li.main ul.sub {
   position: absolute;
   width: 140px;
   top: 50px;
   display: none;
 }
-
 header .inner nav > ul li.main ul.sub li {
   padding: 10px;
 }
-
 header .inner nav > ul li.main ul.sub a {
   font-size: 14px;
   color: #8a8a8a;
 }
-
 header .inner nav > ul li.main ul.sub a:hover {
   color: #00833f;
 }
-
 header .inner h1 img {
   width: 60px;
 }
-
 header .inner .search img {
   width: 22px;
 }
-
 header .fullBg {
   position: absolute;
   background: #eee;
@@ -91,18 +67,13 @@ header .fullBg {
   width: 100%;
   overflow: hidden;
 }
-
 .slideContainer .slideWrap {
   width: 300%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .slideContainer .slideWrap img {
   width: 100%;
 }
-
 .slideContainer .slide img {
   vertical-align: top;
 }
@@ -112,29 +83,20 @@ header .fullBg {
   margin: auto;
   margin-top: 50px;
 }
-
 .slideMenu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .slideMenu ul li {
   padding: 20px;
 }
-
 .slideMenu ul li:hover h3 {
   color: #00833f;
 }
-
 .slideMenu ul li:hover p {
   color: #6f6f6f;
 }
-
 .slideMenu ul .view {
   padding: 10px;
   width: 170px;
@@ -145,24 +107,20 @@ header .fullBg {
   background: transparent;
   border-radius: 50px;
 }
-
 .slideMenu ul .view:hover {
   background: #00833f;
   color: #fff;
 }
-
 .slideMenu ul .view.on {
   background: #00833f;
   color: #fff;
 }
-
 .slideMenu ul h3, .slideMenu ul p {
   color: #9e9e9e;
   padding: 10px;
   font-size: 14px;
   width: 230px;
 }
-
 .slideMenu ul p {
   padding-bottom: 20px;
 }
@@ -175,14 +133,13 @@ h2.subTit {
   text-align: center;
   font-size: 50px;
   margin: 50px auto;
-  font-family: 'batang';
+  font-family: "batang";
   border-bottom: 1px solid #e4e0dd;
   width: 1020px;
   padding-bottom: 50px;
 }
-
 h2.subTit em {
-  font-family: 'verdana';
+  font-family: "verdana";
   display: block;
   font-size: 20px;
   font-style: normal;
@@ -193,32 +150,23 @@ h2.subTit em {
 .itemBox .itemList {
   width: 1020px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
 .itemBox .itemList > li {
   height: 360px;
   width: 238px;
   border: 1px solid #e4e0dd;
   margin: 20px 0;
 }
-
 .itemBox .itemList > li img {
   width: 100%;
 }
-
 .itemBox h3 {
   text-align: center;
   padding: 20px 0;
 }
-
 .itemBox .view {
   padding: 10px;
   width: 58%;
@@ -231,7 +179,6 @@ h2.subTit em {
   border-radius: 50px;
   text-align: center;
 }
-
 .itemBox .view:hover {
   background: #00833f;
   color: #fff;
@@ -242,81 +189,58 @@ h2.subTit em {
   height: 0;
   overflow: hidden;
 }
-
 .itemDetailBox a.close {
   position: absolute;
   right: 420px;
   top: 20px;
   z-index: 100;
 }
-
 .itemDetailBox .itemDetail {
   position: absolute;
   width: 1020px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   padding: 20px;
 }
-
 .itemDetailBox .itemDetail .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .itemDetailBox .itemDetail .col1 {
   width: 510px;
 }
-
 .itemDetailBox .itemDetail .col1 ul.itemTab li {
   display: none;
 }
-
 .itemDetailBox .itemDetail .col1 ul.itemTab li.on {
   display: block;
 }
-
 .itemDetailBox .itemDetail .col1 img {
   width: 338px;
 }
-
 .itemDetailBox .itemDetail .col2 {
   width: 460px;
 }
-
 .itemDetailBox .itemDetail .col2 h3 {
   font-size: 52px;
   padding: 50px 0;
   text-align: left;
 }
-
 .itemDetailBox .itemDetail .col2 h3 b {
   display: block;
   font-size: 30px;
 }
-
 .itemDetailBox .itemDetail .col2 .thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .itemDetailBox .itemDetail .col2 .thumb li {
   cursor: pointer;
 }
-
 .itemDetailBox .itemDetail .col2 .thumb img {
   width: 94px;
   background: #fff;
 }
-
 .itemDetailBox .itemDetail .col2 .thumb p {
   font-size: 14px;
   text-align: center;
@@ -324,20 +248,16 @@ h2.subTit em {
   line-height: 1.2;
   padding-top: 10px;
 }
-
 .itemDetailBox .itemDetail .itemsubSummary ul.desc li {
   display: none;
 }
-
 .itemDetailBox .itemDetail .itemsubSummary ul.desc li.on {
   display: block;
 }
-
 .itemDetailBox .itemDetail .itemsubSummary h4 {
   font-size: 20px;
   padding-bottom: 20px;
 }
-
 .itemDetailBox .itemDetail .itemsubSummary p {
   font-size: 16px;
   padding-bottom: 50px;
@@ -347,7 +267,6 @@ h2.subTit em {
 .green {
   background: #00833f;
 }
-
 .green h3, .green h4, .green p {
   color: #fff;
 }
@@ -355,8 +274,6 @@ h2.subTit em {
 .grey {
   background: #e7e7e7;
 }
-
 .grey h3, .grey h4, .grey p {
   color: #000;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

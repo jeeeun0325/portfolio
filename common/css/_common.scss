@@ -23,9 +23,10 @@ header {
         &::after{
           content: '';
           position: absolute;
-          height: 1px;
+          height: 2px;
           width: 0%;
           background: #fff;
+          transition: .5s;
         }
         a{
           font-size: 20px;
@@ -34,7 +35,7 @@ header {
           &::after{
             content: '';
             position: absolute;
-            height: 1px;
+            height: 2px;
             width: 100%;
             background: #fff;
           }

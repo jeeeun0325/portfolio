@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 100;
   src: url("../fonts/Pretendard-Thin.eot");
@@ -8,9 +8,8 @@
   src: local(""), url("../fonts/Pretendard-Thin.eot") format("embedded-opentype"), url("../fonts/Pretendard-Thin.woff2") format("font-woff2"), url("../fonts/Pretendard-Thin.woff") format("woff"), url("../fonts/Pretendard-Thin.ttf") format("truetype"), url("../fonts/Pretendard-Thin.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 200;
   src: url("../fonts/Pretendard-ExtraLight.eot");
@@ -18,9 +17,8 @@
   src: local(""), url("../fonts/Pretendard-ExtraLight.eot") format("embedded-opentype"), url("../fonts/Pretendard-ExtraLight.woff2") format("font-woff2"), url("../fonts/Pretendard-ExtraLight.woff") format("woff"), url("../fonts/Pretendard-ExtraLight.ttf") format("truetype"), url("../fonts/Pretendard-ExtraLight.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/Pretendard-Light.eot");
@@ -28,9 +26,8 @@
   src: local(""), url("../fonts/Pretendard-Light.eot") format("embedded-opentype"), url("../fonts/Pretendard-Light.woff2") format("font-woff2"), url("../fonts/Pretendard-Light.woff") format("woff"), url("../fonts/Pretendard-Light.ttf") format("truetype"), url("../fonts/Pretendard-Light.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Pretendard-Regular.eot");
@@ -38,9 +35,8 @@
   src: local(""), url("../fonts/Pretendard-Regular.eot") format("embedded-opentype"), url("../fonts/Pretendard-Regular.woff2") format("font-woff2"), url("../fonts/Pretendard-Regular.woff") format("woff"), url("../fonts/Pretendard-Regular.ttf") format("truetype"), url("../fonts/Pretendard-Regular.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/Pretendard-Medium.eot");
@@ -48,9 +44,8 @@
   src: local(""), url("../fonts/Pretendard-Medium.eot") format("embedded-opentype"), url("../fonts/Pretendard-Medium.woff2") format("font-woff2"), url("../fonts/Pretendard-Medium.woff") format("woff"), url("../fonts/Pretendard-Medium.ttf") format("truetype"), url("../fonts/Pretendard-Medium.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/Pretendard-SemiBold.eot");
@@ -58,9 +53,8 @@
   src: local(""), url("../fonts/Pretendard-SemiBold.eot") format("embedded-opentype"), url("../fonts/Pretendard-SemiBold.woff2") format("font-woff2"), url("../fonts/Pretendard-SemiBold.woff") format("woff"), url("../fonts/Pretendard-SemiBold.ttf") format("truetype"), url("../fonts/Pretendard-SemiBold.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Pretendard-Bold.eot");
@@ -68,9 +62,8 @@
   src: local(""), url("../fonts/Pretendard-Bold.eot") format("embedded-opentype"), url("../fonts/Pretendard-Bold.woff2") format("font-woff2"), url("../fonts/Pretendard-Bold.woff") format("woff"), url("../fonts/Pretendard-Bold.ttf") format("truetype"), url("../fonts/Pretendard-Bold.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/Pretendard-ExtraBold.eot");
@@ -78,9 +71,8 @@
   src: local(""), url("../fonts/Pretendard-ExtraBold.eot") format("embedded-opentype"), url("../fonts/Pretendard-ExtraBold.woff2") format("font-woff2"), url("../fonts/Pretendard-ExtraBold.woff") format("woff"), url("../fonts/Pretendard-ExtraBold.ttf") format("truetype"), url("../fonts/Pretendard-ExtraBold.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/Pretendard-Black.eot");
@@ -88,15 +80,13 @@
   src: local(""), url("../fonts/Pretendard-Black.eot") format("embedded-opentype"), url("../fonts/Pretendard-Black.woff2") format("font-woff2"), url("../fonts/Pretendard-Black.woff") format("woff"), url("../fonts/Pretendard-Black.ttf") format("truetype"), url("../fonts/Pretendard-Black.svg") format("svg");
   /* Legacy iOS */
 }
-
 @font-face {
-  font-family: 'jalnan';
+  font-family: "jalnan";
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/Jalnan.eot");
   src: local(""), url("../fonts/Jalnan.eot") format("embedded-opentype"), url("../fonts/Jalnan.woff2") format("font-woff2"), url("../fonts/Jalnan.woff") format("woff"), url("../fonts/Jalnan.ttf") format("truetype"), url("../fonts/Jalnan.svg") format("svg");
 }
-
 /********* reset.css **********/
 html, body, div, span, applet, object, iframe, h1, h2, h3,
 h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -111,13 +101,12 @@ h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
 }
 
 html, body {
-  width: 100%;
-  /*  height: 100%; */
+  width: 100%; /*  height: 100%; */
 }
 
 body {
   font-size: 16px;
-  font-family: 'pretendard', 'Noto Sans','sans-serif';
+  font-family: "pretendard", "Noto Sans", "sans-serif";
   letter-spacing: 0em;
 }
 
@@ -141,7 +130,7 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -168,7 +157,6 @@ address {
 button {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 0 none;
   background-color: transparent;
@@ -177,9 +165,7 @@ button {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  -ms-appearance: none;
   appearance: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -208,7 +194,7 @@ caption, legend {
 .clear {
   clear: both;
   display: block;
-  content: '';
+  content: "";
   overflow: hidden;
 }
 
@@ -241,9 +227,7 @@ input, select, textarea {
   padding: 0 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  -ms-appearance: none;
   appearance: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   display: block;
@@ -359,32 +343,28 @@ header {
   position: fixed;
   z-index: 1;
 }
-
 header nav ul {
   gap: 20px;
   color: #fff;
 }
-
 header nav ul li {
   position: relative;
 }
-
 header nav ul li::after {
-  content: '';
+  content: "";
   position: absolute;
-  height: 1px;
+  height: 2px;
   width: 0%;
   background: #fff;
+  transition: 0.5s;
 }
-
 header nav ul li a {
   font-size: 20px;
 }
-
 header nav ul li.on::after {
-  content: '';
+  content: "";
   position: absolute;
-  height: 1px;
+  height: 2px;
   width: 100%;
   background: #fff;
 }
@@ -401,52 +381,41 @@ section {
 footer {
   background: #181818;
 }
-
 footer .container {
   height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 42px 0;
 }
-
 footer .container .ft_logo .m_ft_logo {
   display: none;
 }
-
 footer .container .ft_logo img {
   opacity: 0.6;
 }
-
 footer .container .ft_logo ul {
   margin-left: 52px;
 }
-
 footer .container .ft_logo ul li {
   font-weight: 300;
   font-size: 0.875em;
   padding-right: 16px;
   color: #fff;
 }
-
 footer .container .ft_logo ul li:last-child {
   color: #AAB0B8;
   padding-left: 16px;
   position: relative;
 }
-
 footer .container .ft_logo ul li:last-child::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   height: 12px;
   background: #79818C;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 footer .container p {
   color: #fff;
   font-weight: 400;
@@ -463,12 +432,8 @@ footer .container p {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 b {
@@ -484,28 +449,18 @@ b {
     padding: 42px 20px;
   }
 }
-
 @media screen and (max-width: 1080px) {
   footer .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 48px 0;
   }
   footer .container .ft_logo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   footer .container .ft_logo ul {
     padding: 24px 0;
     margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 8px;
   }
   footer .container .ft_logo ul li {
@@ -522,7 +477,6 @@ b {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 720px) {
   header {
     height: unset;
@@ -530,16 +484,13 @@ b {
   }
   header .container {
     padding: 20px 24px 28px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 20px 0;
   }
   header .container .logo_sch {
     width: unset;
     height: unset;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   header .container .logo_sch .logo {
     display: none;
@@ -548,9 +499,7 @@ b {
     display: block;
   }
   header .container .search {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
     width: 100%;
   }
   header .container .search .search_bar button {
@@ -566,9 +515,7 @@ b {
     padding: 0 10px;
   }
   header .container .info {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     background: #F7F7F8;
     border-radius: 24px;
     gap: unset;
@@ -582,15 +529,14 @@ b {
     font-weight: 400;
   }
   header .container .info a:first-child:after {
-    content: '';
+    content: "";
     width: 1px;
     height: 10px;
     background: #DDE1E4;
     position: absolute;
     right: 0;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   header .container .info a.on, header .container .info a:hover {
     text-decoration: unset;
@@ -602,10 +548,7 @@ b {
     background: #F7F7F8;
   }
   footer .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 32px 0;
   }
   footer .container .ft_logo img {
@@ -634,21 +577,18 @@ b {
     color: #000;
   }
 }
-
 @font-face {
-  font-family: 'SUITE-Regular';
+  font-family: "SUITE-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'omyu_pretty';
+  font-family: "omyu_pretty";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   overflow-x: hidden;
 }
@@ -657,20 +597,17 @@ body {
   background: #000;
   position: relative;
 }
-
 #sct1 .txtBox {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   width: 50%;
 }
-
 #sct1 .txtBox a {
   font-size: 4vw;
-  font-family: 'SUITE-Regular';
+  font-family: "SUITE-Regular";
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
   color: #ffffff;
@@ -680,13 +617,11 @@ body {
 #sct2 {
   position: relative;
 }
-
 #sct2 .container {
   max-width: 1800px;
   margin: auto;
   height: 100%;
 }
-
 #sct2 .sct2Bg {
   position: absolute;
   width: 100%;
@@ -696,185 +631,184 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
 #sct2 .sct2Bg .sct2Bg-swiper .swiper-slide {
   width: 100%;
   height: 100%;
 }
-
 #sct2 .sct2Bg .sct2Bg-swiper .swiper-slide img {
   max-width: unset;
   width: 100%;
   height: 100%;
 }
-
 #sct2 .workSlide {
   padding-top: 10%;
   height: 100%;
 }
-
 #sct2 .workSlide .work-swiper {
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
 }
-
 #sct2 .workSlide .work-swiper .swiper-slide {
   padding: 0 40px;
   max-width: 600px;
 }
-
 #sct2 .workSlide .work-swiper .swiper-slide.swiper-slide-next .workwrap {
-  -webkit-transform: translateY(90px);
-          transform: translateY(90px);
-  -webkit-transition: .9s;
-  transition: .9s;
+  transform: translateY(90px);
+  transition: 0.9s;
 }
-
 #sct2 .workSlide .work-swiper .slide_btn_wrap {
   position: absolute;
   height: 70px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 40px;
   bottom: 10%;
   z-index: 30;
 }
-
 #sct2 .workSlide .work-swiper .slide_btn_wrap .prev_btn {
   width: 70px;
   height: 70px;
   background: url(../images/prev.png) no-repeat center/cover;
   cursor: pointer;
 }
-
 #sct2 .workSlide .work-swiper .slide_btn_wrap .next_btn {
   width: 70px;
   height: 70px;
   background: url(../images/next.png) no-repeat center/cover;
   cursor: pointer;
 }
-
 #sct2 .workSlide .work-swiper .workwrap {
-  border: 1px solid #ffffffc0;
+  border: 1px solid rgba(255, 255, 255, 0.7529411765);
   border-radius: 8px;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: .5s;
-  transition: .5s;
+  transform: translateY(20px);
+  transition: 0.5s;
   position: relative;
   overflow: hidden;
 }
-
 #sct2 .workSlide .work-swiper .workwrap p {
   position: relative;
   z-index: 1;
   padding: 0 20px 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 20px;
-  -webkit-transform: translateY(25%);
-          transform: translateY(25%);
-  -webkit-transition: .5s;
-  transition: .5s;
+  transform: translateY(25%);
+  transition: 0.5s;
 }
-
 #sct2 .workSlide .work-swiper .workwrap p span {
   color: #fff;
   display: block;
 }
-
 #sct2 .workSlide .work-swiper .workwrap p span.num {
   display: inline-block;
   font-size: 100px;
-  font-family: 'NanumBarunGothic';
+  font-family: "NanumBarunGothic";
   font-weight: 700;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   color: transparent;
   -webkit-text-stroke: 1px #ffffff;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 #sct2 .workSlide .work-swiper .workwrap .hoverdir {
   position: absolute;
   border-radius: 10px;
   height: 100%;
   width: 100%;
 }
-
 #sct2 .workSlide .work-swiper .workwrap .hoverdir .work_thm {
   position: relative;
   width: 100%;
   height: 100%;
 }
-
 #sct2 .workSlide .work-swiper .workwrap .hoverdir .work_thm img {
   position: absolute;
   width: 100%;
 }
-
 #sct2 .workSlide .work-swiper .workwrap .hoverdir .work_thm .dim {
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-
 #sct2 .workSlide .work-swiper .workwrap .hoverdir a {
   height: 100%;
   position: relative;
 }
-
 #sct2 .workSlide .work-swiper .workwrap .hoverdir a .hoTit {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-
 #sct2 .workSlide .work-swiper .workwrap.on {
   border: none;
-  -webkit-box-shadow: 25px 25px 20px 10px #00000050;
-          box-shadow: 25px 25px 20px 10px #00000050;
+  box-shadow: 25px 25px 20px 10px rgba(0, 0, 0, 0.3137254902);
 }
-
 #sct2 .workSlide .work-swiper .workwrap.on p {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  transform: translateY(-5%);
 }
-
 #sct2 .workSlide .work-swiper .workwrap.on p span.num {
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: rgb(255, 255, 255);
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 #sct2 .work-swiper img {
   width: 100%;
   border-radius: 10px;
 }
-
 #sct2 .swiper-scrollbar {
   width: 100%;
   height: 5px;
   bottom: -100px;
 }
-
 #sct2 .txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-/*# sourceMappingURL=default.css.map */
+
+#sct3 {
+  display: flex;
+  align-items: center;
+}
+
+.bar_wrap {
+  width: 800px;
+  margin: auto;
+}
+
+ul.bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+ul.bar li {
+  text-align: center;
+}
+ul.bar li p {
+  color: #fff;
+  font-family: "LeferiPoint-WhiteObliqueA";
+}
+ul.bar li .progress {
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+ul.bar li .progress p.per {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg {
+  stroke-linecap: round;
+}
+
+#sct3 {
+  background: #000000;
+}/*# sourceMappingURL=default.css.map */

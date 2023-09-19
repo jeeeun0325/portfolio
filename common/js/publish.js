@@ -169,7 +169,8 @@ $(window).scroll(function () {
   let scrTop = $(this).scrollTop()
   $('section').each(function(i){
     let secTop=$(this).offset().top
-    console.log(secTop);
+    let secTop3=$('#sct3').offset().top
+    //console.log(secTop);
     if(scrTop>=secTop){
         $('nav ul li').removeClass('on');
             $('nav ul li').eq(i).addClass('on');
@@ -178,6 +179,158 @@ $(window).scroll(function () {
             // $('.txtBox').removeClass('on')
             // $(this).find('.txtBox').addClass('on')
     }
+    // sct3에서 프로그레스 바 작동
+    if(scrTop>=secTop3){
+      bar.animate(0.9)
+      bar2.animate(0.7)
+      bar3.animate(0.7)
+      bar4.animate(0.4)
+      bar5.animate(0.4)
+      bar6.animate(0.8)
+      bar7.animate(0.7)
+      bar8.animate(0.5)
+    }else{
+      bar.animate(0)
+      bar2.animate(0)
+      bar3.animate(0)
+      bar4.animate(0)
+      bar5.animate(0)
+      bar6.animate(0)
+      bar7.animate(0)
+      bar8.animate(0)
+    }
     
     })
 })
+
+var bar=null;
+
+// progress
+
+var bar = new ProgressBar.Circle(progress1, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},/* #b7e7f0 */
+    to: {color: '#a3d6df;', a:1},
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  bar.animate(0);  // Number from 0.0 to 1.0
+  
+var bar2 = new ProgressBar.Circle(progress2, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},
+    to: {color: '#a3d6df;', a:1},
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  
+  bar2.animate(0); 
+
+var bar3 = new ProgressBar.Circle(progress3, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},
+    to: {color: '#a3d6df', a:1},
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  
+  bar3.animate(0); 
+
+  var bar4 = new ProgressBar.Circle(progress4, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},
+    to: {color: '#a3d6df', a:1},
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  
+  bar4.animate(0); 
+
+  var bar5 = new ProgressBar.Circle(progress5, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},
+    to: {color: '#a3d6df', a:1},
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  
+  bar5.animate(0); 
+
+  var bar6 = new ProgressBar.Circle(progress6, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},
+    to: {color: '#a3d6df', a:1},
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  
+  bar6.animate(0); 
+
+  var bar7 = new ProgressBar.Circle(progress7, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},
+    to: {color: '#a3d6df', a:1},
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  
+  bar7.animate(0); 
+
+  var bar8 = new ProgressBar.Circle(progress8, {
+    color: '#d1cdfa',
+    trailColor: '#eee',
+    trailWidth: 1,
+    duration: 1400,
+    easing: 'bounce',
+    strokeWidth: 8,
+    from: {color: '#7569cf', a:0},
+    to: {color: '#a3d6df', a:1},/* #7569cf */
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+    }
+  });
+  
+  bar8.animate(0); 

@@ -225,21 +225,33 @@ body{
 }
 
 // sct3
+#sct3{
+  display: flex;
+  align-items: center;
+}
+.bar_wrap{
+  width: 800px;
+  margin: auto;
+}
 ul.bar{
   display: flex;
   flex-wrap: wrap;
+  gap: 50px;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 
 li{
-  width: 50%;
+ // width: 25%;
   text-align: center;
   p{
     color: #fff;
+    font-family: 'LeferiPoint-WhiteObliqueA';
   }
   .progress{
     margin: 20px auto;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: relative;
   p.per{
     position: absolute;
@@ -250,5 +262,8 @@ li{
   }
 }
 }
-.bar p{font-family: 'LeferiPoint-WhiteObliqueA';}
 svg{stroke-linecap:round}
+#sct3{
+  //background: #205993;
+  background: #000000;
+}
