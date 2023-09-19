@@ -224,3 +224,31 @@ body{
   }
 }
 
+// sct3
+ul.bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+li{
+  width: 50%;
+  text-align: center;
+  p{
+    color: #fff;
+  }
+  .progress{
+    margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  p.per{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  }
+}
+}
+.bar p{font-family: 'LeferiPoint-WhiteObliqueA';}
+svg{stroke-linecap:round}
