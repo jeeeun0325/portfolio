@@ -369,7 +369,7 @@ header nav ul li.on::after {
   background: #fff;
 }
 
-#sct3, #sct4 {
+#sct3 {
   background: #000;
 }
 
@@ -811,4 +811,30 @@ svg {
 
 #sct3 {
   background: #000000;
+}
+
+#sct4 {
+  height: unset;
+}
+
+.abt_wrap {
+  width: 100%;
+  display: flex;
+}
+.abt_wrap .abt_img {
+  position: sticky;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/thmb/aromatica.png) no-repeat center/cover;
+}
+.abt_wrap .abt_txt {
+  width: 50%;
+}
+
+#sct5 {
+  height: 30vh;
 }/*# sourceMappingURL=default.css.map */

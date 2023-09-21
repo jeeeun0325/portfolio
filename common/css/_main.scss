@@ -267,3 +267,37 @@ svg{stroke-linecap:round}
   //background: #205993;
   background: #000000;
 }
+
+
+#sct4{
+  height: unset;
+}
+.abt_wrap{
+  width: 100%;
+  display: flex;
+  .abt_img{
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: url(../images/thmb/aromatica.png)no-repeat center / cover;
+  //  .img_bg{
+  //   position: absolute;;
+  //   width: 100%;
+  //   height: 100%;
+   
+  //   z-index: -1;
+  //   filter: blur(4px) grayscale(100%);
+  //  }
+  }
+  .abt_txt{
+    width: 50%;
+  }
+}
+
+#sct5{
+  height: 30vh;
+}

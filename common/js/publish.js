@@ -148,21 +148,41 @@ $('nav ul li a').click(function (e) {
   $('html,body').stop().animate({ 'scrollTop': secTop }, 1000)
 })
 
-$('section').mousewheel(function (e, delta) {
+$('#sct1,#sct2,#sct3').mousewheel(function (e, delta) {
   if (delta > 0) {
-      // console.log('up')
+      //console.log('up')
       let prev = $(this).prev().offset().top
       $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
 
   } else if (delta < 0) {
-      // console.log('down')
+      //console.log('down')
       let next = $(this).next().offset().top
       $('html,body').stop().animate({ 'scrollTop': next }, 1000)
   }
 
-
+ 
 
 })
+
+$('#sct4').mousewheel(function (e, delta) {
+  let scrTop = $(window).scrollTop()
+let secTop4=$(this).offset().top
+console.log(scrTop,secTop4)
+if (delta > 0) {
+  console.log(delta)
+  if(scrTop===secTop4){
+
+    console.log('up')
+    let prev = $(this).prev().offset().top
+    $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
+  } else if(scrTop>secTop4){
+    console.log('up2')
+    $('html,body').stop().animate({ 'scrollTop': secTop4}, 1000)
+  }
+}
+
+})
+
 
 $(window).scroll(function () {
   
@@ -170,6 +190,7 @@ $(window).scroll(function () {
   $('section').each(function(i){
     let secTop=$(this).offset().top
     let secTop3=$('#sct3').offset().top
+    let secTop4=$('#sct4').offset().top
     //console.log(secTop);
     if(scrTop>=secTop){
         $('nav ul li').removeClass('on');
@@ -200,6 +221,16 @@ $(window).scroll(function () {
       bar8.animate(0)
     }
     
+    if(scrTop>=secTop4){
+      bar.animate(0)
+      bar2.animate(0)
+      bar3.animate(0)
+      bar4.animate(0)
+      bar5.animate(0)
+      bar6.animate(0)
+      bar7.animate(0)
+      bar8.animate(0)
+    }
     })
 })
 
