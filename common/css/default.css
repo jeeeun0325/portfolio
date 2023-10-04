@@ -361,7 +361,7 @@ header nav ul li::after {
 header nav ul li a {
   font-size: 20px;
 }
-header nav ul li.on::after {
+header nav ul li.active::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -373,9 +373,8 @@ header nav ul li.on::after {
   background: #000;
 }
 
-section {
+.section {
   width: 100%;
-  height: 100vh;
 }
 
 footer {
@@ -577,22 +576,6 @@ b {
     color: #000;
   }
 }
-@font-face {
-  font-family: "SUITE-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "omyu_pretty";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  overflow-x: hidden;
-}
-
 #sct1 {
   background: #000;
   position: relative;
@@ -813,10 +796,6 @@ svg {
   background: #000000;
 }
 
-#sct4 {
-  height: unset;
-}
-
 .abt_wrap {
   width: 100%;
   display: flex;
@@ -829,12 +808,26 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../images/thmb/aromatica.png) no-repeat center/cover;
+  background: url(../images/abt_bl.jpg) no-repeat center/cover;
+}
+.abt_wrap .abt_img img {
+  width: 500px;
 }
 .abt_wrap .abt_txt {
   width: 50%;
 }
+.abt_wrap .abt_txt .abt_me {
+  margin: auto;
+  padding-top: 10%;
+  width: 70%;
+}
+.abt_wrap .abt_txt .abt_me .abt_title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 30px 0;
+}
 
-#sct5 {
-  height: 30vh;
+b {
+  display: inline-block;
 }/*# sourceMappingURL=default.css.map */

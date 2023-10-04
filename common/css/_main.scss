@@ -1,20 +1,17 @@
-@font-face {
-  font-family: 'SUITE-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'SUITE-Regular';
+//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+//   font-weight: 400;
+//   font-style: normal;
+// }
 
-@font-face {
-  font-family: 'omyu_pretty';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'omyu_pretty';
+//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-body{
-  overflow-x: hidden;
-}
 #sct1 {
   background: #000;
   position: relative;
@@ -268,10 +265,6 @@ svg{stroke-linecap:round}
   background: #000000;
 }
 
-
-#sct4{
-  height: unset;
-}
 .abt_wrap{
   width: 100%;
   display: flex;
@@ -283,21 +276,29 @@ svg{stroke-linecap:round}
    display: flex;
    align-items: center;
    justify-content: center;
-   background: url(../images/thmb/aromatica.png)no-repeat center / cover;
-  //  .img_bg{
-  //   position: absolute;;
-  //   width: 100%;
-  //   height: 100%;
+   background: url(../images/abt_bl.jpg)no-repeat center / cover;
    
-  //   z-index: -1;
-  //   filter: blur(4px) grayscale(100%);
-  //  }
+  img{
+    width: 500px;
+  }
   }
   .abt_txt{
     width: 50%;
+    .abt_me{
+      margin: auto;
+      padding-top: 10%;
+      width: 70%;
+      .abt_title{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 30px 0;
+      }
+    }
   }
 }
 
-#sct5{
-  height: 30vh;
+
+b{
+  display: inline-block;
 }

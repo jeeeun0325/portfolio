@@ -140,66 +140,60 @@ $(function () {
 // }
 
 // scroll 제어
-$('nav ul li a').click(function (e) {
-  e.preventDefault()
-  let href = $(this).attr('href')
-  let secTop = $(href).offset().top
-  // alert(secTop)
-  $('html,body').stop().animate({ 'scrollTop': secTop }, 1000)
-})
+// $('nav ul li a').click(function (e) {
+//   e.preventDefault()
+//   let href = $(this).attr('href')
+//   let secTop = $(href).offset().top
+//   // alert(secTop)
+//   $('html,body').stop().animate({ 'scrollTop': secTop }, 1000)
+// })
 
-$('#sct1,#sct2,#sct3').mousewheel(function (e, delta) {
-  if (delta > 0) {
-      //console.log('up')
-      let prev = $(this).prev().offset().top
-      $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
+// $('#sct1,#sct2,#sct3').mousewheel(function (e, delta) {
+//   if (delta > 0) {
+//       //console.log('up')
+//       let prev = $(this).prev().offset().top
+//       $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
 
-  } else if (delta < 0) {
-      //console.log('down')
-      let next = $(this).next().offset().top
-      $('html,body').stop().animate({ 'scrollTop': next }, 1000)
-  }
+//   } else if (delta < 0) {
+//       //console.log('down')
+//       let next = $(this).next().offset().top
+//       $('html,body').stop().animate({ 'scrollTop': next }, 1000)
+//   }
 
  
 
-})
+// })
 
-$('#sct4').mousewheel(function (e, delta) {
-  let scrTop = $(window).scrollTop()
-let secTop4=$(this).offset().top
-console.log(scrTop,secTop4)
-if (delta > 0) {
-  console.log(delta)
-  if(scrTop===secTop4){
+// $('#sct4').mousewheel(function (e, delta) {
+//   let scrTop = $(window).scrollTop()
+// let secTop4=$(this).offset().top
+// console.log(scrTop,secTop4)
+// if (delta > 0) {
+//   console.log(delta)
+//   if(scrTop===secTop4){
 
-    console.log('up')
-    let prev = $(this).prev().offset().top
-    $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
-  } else if(scrTop>secTop4){
-    console.log('up2')
-    $('html,body').stop().animate({ 'scrollTop': secTop4}, 1000)
-  }
-}
+//     console.log('up')
+//     let prev = $(this).prev().offset().top
+//     $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
+//   } else if(scrTop>secTop4){
+//     console.log('up2')
+//     $('html,body').stop().animate({ 'scrollTop': secTop4}, 1000)
+//   }
+// }
 
-})
+// })
 
 
 $(window).scroll(function () {
-  
-  let scrTop = $(this).scrollTop()
-  $('section').each(function(i){
-    let secTop=$(this).offset().top
-    let secTop3=$('#sct3').offset().top
-    let secTop4=$('#sct4').offset().top
-    //console.log(secTop);
-    if(scrTop>=secTop){
-        $('nav ul li').removeClass('on');
-            $('nav ul li').eq(i).addClass('on');
-            // $('header').removeClass()
-            // $('header').addClass('bg'+i)
-            // $('.txtBox').removeClass('on')
-            // $(this).find('.txtBox').addClass('on')
-    }
+  var set2offTop=$('#sct2').offset().top
+    $('section').each(function(i){
+        var secT=$(this).offset().top
+        var secTop3=$('#sct3').offset().top
+        var secTop4=$('#sct4').offset().top
+        var scrTop=$(window).scrollTop()
+
+console.log(secT,scrTop);
+   
     // sct3에서 프로그레스 바 작동
     if(scrTop>=secTop3){
       bar.animate(0.9)
@@ -365,3 +359,16 @@ var bar3 = new ProgressBar.Circle(progress3, {
   });
   
   bar8.animate(0); 
+
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      //options here
+      autoScrolling:true,
+      scrollHorizontally: true,
+      anchors: ['section1', 'section2', 'section3','section4'],
+      menu: '#menu',
+      scrollOverflow: true,
+      scrollOverflowReset: true,
+      //scrollBar: true
+    });
+  });
