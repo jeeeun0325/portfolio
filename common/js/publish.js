@@ -133,100 +133,6 @@ $(function () {
 
 });
 
-// if ( jQuery().hoverdir ) {
-// 	jQuery( '.hoverdir-container .hoverdir-item' ).each( function() {
-// 		jQuery( this ).hoverdir();
-// 	} );
-// }
-
-// scroll 제어
-// $('nav ul li a').click(function (e) {
-//   e.preventDefault()
-//   let href = $(this).attr('href')
-//   let secTop = $(href).offset().top
-//   // alert(secTop)
-//   $('html,body').stop().animate({ 'scrollTop': secTop }, 1000)
-// })
-
-// $('#sct1,#sct2,#sct3').mousewheel(function (e, delta) {
-//   if (delta > 0) {
-//       //console.log('up')
-//       let prev = $(this).prev().offset().top
-//       $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
-
-//   } else if (delta < 0) {
-//       //console.log('down')
-//       let next = $(this).next().offset().top
-//       $('html,body').stop().animate({ 'scrollTop': next }, 1000)
-//   }
-
- 
-
-// })
-
-// $('#sct4').mousewheel(function (e, delta) {
-//   let scrTop = $(window).scrollTop()
-// let secTop4=$(this).offset().top
-// console.log(scrTop,secTop4)
-// if (delta > 0) {
-//   console.log(delta)
-//   if(scrTop===secTop4){
-
-//     console.log('up')
-//     let prev = $(this).prev().offset().top
-//     $('html,body').stop().animate({ 'scrollTop': prev }, 1000)
-//   } else if(scrTop>secTop4){
-//     console.log('up2')
-//     $('html,body').stop().animate({ 'scrollTop': secTop4}, 1000)
-//   }
-// }
-
-// })
-
-
-$(window).scroll(function () {
-  var set2offTop=$('#sct2').offset().top
-    $('section').each(function(i){
-        var secT=$(this).offset().top
-        var secTop3=$('#sct3').offset().top
-        var secTop4=$('#sct4').offset().top
-        var scrTop=$(window).scrollTop()
-
-console.log(secT,scrTop);
-   
-    // sct3에서 프로그레스 바 작동
-    if(scrTop>=secTop3){
-      bar.animate(0.9)
-      bar2.animate(0.7)
-      bar3.animate(0.7)
-      bar4.animate(0.4)
-      bar5.animate(0.4)
-      bar6.animate(0.8)
-      bar7.animate(0.7)
-      bar8.animate(0.5)
-    }else{
-      bar.animate(0)
-      bar2.animate(0)
-      bar3.animate(0)
-      bar4.animate(0)
-      bar5.animate(0)
-      bar6.animate(0)
-      bar7.animate(0)
-      bar8.animate(0)
-    }
-    
-    if(scrTop>=secTop4){
-      bar.animate(0)
-      bar2.animate(0)
-      bar3.animate(0)
-      bar4.animate(0)
-      bar5.animate(0)
-      bar6.animate(0)
-      bar7.animate(0)
-      bar8.animate(0)
-    }
-    })
-})
 
 var bar=null;
 
@@ -369,6 +275,29 @@ var bar3 = new ProgressBar.Circle(progress3, {
       menu: '#menu',
       scrollOverflow: true,
       scrollOverflowReset: true,
+      responsiveWidth: 720, //너비가 720일때 수동 원페이지 -> 스크롤
       //scrollBar: true
+      'afterLoad': function (anchorLink, index) {
+        if (index == 3){
+          //alert ('세번째 인덱스');
+          bar.animate(0.9)
+      bar2.animate(0.7)
+      bar3.animate(0.7)
+      bar4.animate(0.4)
+      bar5.animate(0.8)
+      bar6.animate(0.8)
+      bar7.animate(0.7)
+      bar8.animate(0.5)
+        } else{
+          bar.animate(0)
+      bar2.animate(0)
+      bar3.animate(0)
+      bar4.animate(0)
+      bar5.animate(0)
+      bar6.animate(0)
+      bar7.animate(0)
+      bar8.animate(0)
+        }
+      },
     });
   });
