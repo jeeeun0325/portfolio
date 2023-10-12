@@ -62,7 +62,7 @@ window.onload = function() {
 
 // work slide
 var swiper2 = new Swiper(".work-swiper", {
-  slidesPerView:2,
+  slidesPerView:1.2,
   spaceBetween: 5,
     pagination: {
         el: "swiper-pagination",
@@ -85,10 +85,18 @@ var swiper2 = new Swiper(".work-swiper", {
 
       breakpoints: {
         501: {
-          slidesPerView:2,
+          slidesPerView:1.3,
     spaceBetween: 5,
         },
       1023: {
+        slidesPerView:2,
+  spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView:2.5,
+  spaceBetween: 10,
+      },
+      1500: {
         slidesPerView:3,
   spaceBetween: 10,
       },
@@ -274,9 +282,10 @@ var bar3 = new ProgressBar.Circle(progress3, {
       anchors: ['section1', 'section2', 'section3','section4'],
       menu: '#menu',
       scrollOverflow: true,
-      scrollOverflowReset: true,
-      responsiveWidth: 720, //너비가 720일때 수동 원페이지 -> 스크롤
+     //scrollOverflowReset: true,
+      responsiveWidth: 1024, //너비가 1024일때 수동 원페이지 -> 스크롤
       //scrollBar: true
+      normalScrollElements: '.scrollable-element',
       'afterLoad': function (anchorLink, index) {
         if (index == 3){
           //alert ('세번째 인덱스');

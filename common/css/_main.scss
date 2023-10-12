@@ -78,6 +78,7 @@ video{
     z-index: -1;
     overflow: hidden;
     .sct2Bg-swiper{
+      height: 100%;
       .swiper-slide{
         width: 100%;
           height: 100%;
@@ -172,7 +173,7 @@ video{
           position: absolute;
           border-radius: 10px;
           height: 100%;
-          width: 100%;
+          width: 100% !important;
           .work_thm {
             position: relative;
             width: 100%;
@@ -286,10 +287,10 @@ svg{stroke-linecap:round}
 .abt_wrap{
   width: 100%;
   display: flex;
-  .abt_img{
-    position: sticky;
-    top: 0;
+  .abtimg_wrap{
     width: 50%;
+  }
+  .abt_img{
     height: 100vh;
    display: flex;
    align-items: center;
@@ -297,7 +298,20 @@ svg{stroke-linecap:round}
    background: url(../images/abt_bl.jpg)no-repeat center / cover;
    
   img{
-    width: 500px;
+    max-width: 500px;
+    width: 60%;
+  }
+  }
+  .abt_img02{
+    height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: url(../images/abt02_bl.png)no-repeat center / cover;
+   
+  img{
+    max-width: 500px;
+    width: 60%;
   }
   }
   .abt_txt{
@@ -308,9 +322,17 @@ svg{stroke-linecap:round}
       width: 70%;
       .abt_title{
         display: block;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 600;
         padding: 30px 0;
+      }
+      P{
+        font-size: 18px;
+      }
+      ul{
+        li{
+          font-size: 18px;
+        }
       }
     }
   }
@@ -319,4 +341,12 @@ svg{stroke-linecap:round}
 
 b{
   display: inline-block;
+}
+
+
+@media screen and (max-width:720px) {
+  #sct2 .workSlide .work-swiper .workwrap p span.num{
+    font-size: 13vw;
+  }
+
 }
