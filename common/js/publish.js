@@ -310,3 +310,25 @@ var bar3 = new ProgressBar.Circle(progress3, {
       },
     });
   });
+
+  $(document).ready(function(){
+
+    $(window).resize(function(){
+      let wid=$(this).width()
+      if(wid>1024){
+        $('header').removeClass()
+      }else{
+        $('header').addClass('hd_bg')
+      }
+    })
+
+    $(window).scroll(function(){
+      let scrT=$(this).scrollTop()
+      if(scrT<100){
+        $('header').removeClass()
+      }else{
+        $('header').addClass('hd_bg')
+      }
+    })
+  })
+

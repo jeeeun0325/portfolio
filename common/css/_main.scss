@@ -119,7 +119,7 @@ video{
         display: flex;
         justify-content: center;
         gap: 40px;
-        bottom: 10%;
+        bottom: 15%;
         z-index: 30;
         .prev_btn{
           width: 70px;
@@ -244,7 +244,8 @@ video{
   align-items: center;
 }
 .bar_wrap{
-  width: 800px;
+  max-width: 800px;
+  padding: 20px;
   margin: auto;
   height: 100%;
   display: flex;
@@ -343,7 +344,9 @@ b{
   display: inline-block;
 }
 
+@media screen and (max-width:1024px) {
 
+}
 @media screen and (max-width:720px) {
   #sct2 .workSlide .work-swiper .workwrap p span.num{
     font-size: 13vw;
