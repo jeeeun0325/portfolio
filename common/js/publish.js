@@ -62,8 +62,7 @@ window.onload = function() {
 
 // work slide
 var swiper2 = new Swiper(".work-swiper", {
-  slidesPerView:1.2,
-  spaceBetween: 5,
+  slidesPerView:1.1,
     pagination: {
         el: "swiper-pagination",
         type: "fraction",
@@ -317,8 +316,18 @@ var bar3 = new ProgressBar.Circle(progress3, {
       let wid=$(this).width()
       if(wid>1024){
         $('header').removeClass()
+        
       }else{
         $('header').addClass('hd_bg')
+        
+      }
+
+      if(wid>720){
+        $('#da-thumbs .workwrap').hoverdir();
+        $('#da-thumbs .workwrap').removeClass('mob_bg')
+      }else{
+        $('#da-thumbs .workwrap').hoverdir('destroy');
+        $('#da-thumbs .workwrap').addClass('mob_bg')
       }
     })
 

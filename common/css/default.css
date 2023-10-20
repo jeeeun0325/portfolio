@@ -537,7 +537,7 @@ b {
   width: 50%;
 }
 #sct1 .txtBox a {
-  font-size: 4vw;
+  font-size: 75px;
   font-family: "SUITE-Regular";
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
@@ -701,12 +701,135 @@ video#myVideo2 {
   box-shadow: 25px 25px 20px 10px rgba(0, 0, 0, 0.3137254902);
 }
 #sct2 .workSlide .work-swiper .workwrap.on p {
-  transform: translateY(-5%);
+  transform: translateY(-1%);
 }
 #sct2 .workSlide .work-swiper .workwrap.on p span.num {
   -webkit-text-fill-color: rgb(255, 255, 255);
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
   transition: 0.3s;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.keci_th {
+  background: url(../images/thmb/keci.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.mf_th {
+  background: url(../images/thmb/mofa.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.asf_th {
+  background: url(../images/thmb/asf.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.tta_th {
+  background: url(../images/thmb/tta.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.ansan_th {
+  background: url(../images/thmb/ansanebook.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.mvot_th {
+  background: url(../images/thmb/mvoting.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.yeyak_th {
+  background: url(../images/thmb/yeyak.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.yums_th {
+  background: url(../images/thmb/yum.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.del_th {
+  background: url(../images/thmb/delmonte.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.arte_th {
+  background: url(../images/thmb/arte.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.hdc_th {
+  background: url(../images/thmb/hyundaicard.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.lgchem_th {
+  background: url(../images/thmb/lgchem.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.bam_th {
+  background: url(../images/thmb/bam.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.nuxe_th {
+  background: url(../images/thmb/nuxe.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.wmpo_th {
+  background: url(../images/thmb/wema.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.lotte_th {
+  background: url(../images/thmb/lotte.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.lush_th {
+  background: url(../images/thmb/lush.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.lotteht_th {
+  background: url(../images/thmb/lottehotel.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.coca_th {
+  background: url(../images/thmb/cocacola.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.rar_th {
+  background: url(../images/thmb/roundaround.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.bay_th {
+  background: url(../images/thmb/bay.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.aroma_th {
+  background: url(../images/thmb/aromatica.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.krispy_th {
+  background: url(../images/thmb/krispy.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.jomal_th {
+  background: url(../images/thmb/jomalone.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.sucamp_th {
+  background: url(../images/thmb/super.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.yes24_th {
+  background: url(../images/thmb/yes24.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.ace_th {
+  background: url(../images/thmb/acebed.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.jwe_th {
+  background: url(../images/thmb/jwe.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.auntie_th {
+  background: url(../images/thmb/auntie.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.stx_th {
+  background: url(../images/thmb/stx.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.fss_th {
+  background: url(../images/thmb/fursys.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.wd_th {
+  background: url(../images/thmb/woodam.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.mogo_th {
+  background: url(../images/thmb/mugo.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.br_th {
+  background: url(../images/thmb/br.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.tbr_th {
+  background: url(../images/thmb/tamburins.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.sabon_th {
+  background: url(../images/thmb/sabon.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.dior_th {
+  background: url(../images/thmb/dior.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.nd_th {
+  background: url(../images/thmb/newdin.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.inch_th {
+  background: url(../images/thmb/incheon.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.artisee_th {
+  background: url(../images/thmb/artisee.png) no-repeat center/cover;
+}
+#sct2 .workSlide .work-swiper .workwrap.mob_bg.bnf_th {
+  background: url(../images/thmb/benefit.png) no-repeat center/cover;
 }
 #sct2 .work-swiper img {
   width: 100%;
@@ -837,8 +960,18 @@ b {
   }
 }
 @media screen and (max-width: 720px) {
+  #sct1 .txtBox a {
+    font-size: 40px;
+  }
+  #sct2 .workSlide .work-swiper .workwrap {
+    border: none;
+  }
+  #sct2 .workSlide .work-swiper .workwrap p {
+    transform: translateY(-1%);
+  }
   #sct2 .workSlide .work-swiper .workwrap p span.num {
     font-size: 13vw;
+    -webkit-text-fill-color: #ffffff;
   }
   ul.bar {
     grid-template-columns: repeat(2, 1fr);
@@ -847,5 +980,26 @@ b {
   ul.bar li .progress {
     width: 100px;
     height: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav ul li a {
+    font-size: 16px;
+  }
+  #sct2 .workSlide .work-swiper .workwrap.on p {
+    transform: unset;
+  }
+  #sct2 .workSlide .work-swiper .workwrap p {
+    flex-direction: column;
+    transform: unset;
+    padding: 0 20px 4.5%;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  #sct2 .workSlide .work-swiper .workwrap p span.tBox {
+    height: 100px;
+  }
+  #sct2 .workSlide .work-swiper .swiper-slide {
+    padding: 0 20px;
   }
 }/*# sourceMappingURL=default.css.map */

@@ -35,7 +35,7 @@
     width: 50%;
 
     a {
-      font-size: 4vw;
+      font-size: 75px;
       font-family: 'SUITE-Regular';
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 1px;
@@ -205,7 +205,7 @@ video{
           border: none;
           box-shadow:25px 25px 20px 10px #00000050 ;
           p{
-            transform: translateY(-5%);
+            transform: translateY(-1%);
             span{
               &.num{
                 -webkit-text-fill-color: rgb(255, 255, 255);
@@ -213,6 +213,131 @@ video{
   transition: .3s;
               }
             }
+          }
+        }
+        &.mob_bg{
+          &.keci_th{
+            background: url(../images/thmb/keci.png)no-repeat center/cover;
+          }
+          &.mf_th{
+            background: url(../images/thmb/mofa.png)no-repeat center/cover;
+          }
+          &.asf_th{
+            background: url(../images/thmb/asf.png)no-repeat center/cover;
+          }
+          &.tta_th{
+            background: url(../images/thmb/tta.png)no-repeat center/cover;
+          }
+          &.ansan_th{
+            background: url(../images/thmb/ansanebook.png)no-repeat center/cover;
+          }
+          &.mvot_th{
+            background: url(../images/thmb/mvoting.png)no-repeat center/cover;
+          }
+          &.yeyak_th{
+            background: url(../images/thmb/yeyak.png)no-repeat center/cover;
+          }
+          &.yums_th{
+            background: url(../images/thmb/yum.png)no-repeat center/cover;
+          }
+          &.del_th{
+            background: url(../images/thmb/delmonte.png)no-repeat center/cover;
+          }
+          &.arte_th{
+            background: url(../images/thmb/arte.png)no-repeat center/cover;
+          }
+          &.hdc_th{
+            background: url(../images/thmb/hyundaicard.png)no-repeat center/cover;
+          }
+          &.lgchem_th{
+            background: url(../images/thmb/lgchem.png)no-repeat center/cover;
+          }
+          &.bam_th{
+            background: url(../images/thmb/bam.png)no-repeat center/cover;
+          }
+          &.nuxe_th{
+            background: url(../images/thmb/nuxe.png)no-repeat center/cover;
+          }
+          &.wmpo_th{
+            background: url(../images/thmb/wema.png)no-repeat center/cover;
+          }
+          &.lotte_th{
+            background: url(../images/thmb/lotte.png)no-repeat center/cover;
+          }
+          &.lush_th{
+            background: url(../images/thmb/lush.png)no-repeat center/cover;
+          }
+          &.lotteht_th{
+            background: url(../images/thmb/lottehotel.png)no-repeat center/cover;
+          }
+          &.coca_th{
+            background: url(../images/thmb/cocacola.png)no-repeat center/cover;
+          }
+          &.rar_th{
+            background: url(../images/thmb/roundaround.png)no-repeat center/cover;
+          }
+          &.bay_th{
+            background: url(../images/thmb/bay.png)no-repeat center/cover;
+          }
+          &.aroma_th{
+            background: url(../images/thmb/aromatica.png)no-repeat center/cover;
+          }
+          &.krispy_th{
+            background: url(../images/thmb/krispy.png)no-repeat center/cover;
+          }
+          &.jomal_th{
+            background: url(../images/thmb/jomalone.png)no-repeat center/cover;
+          }
+          &.sucamp_th{
+            background: url(../images/thmb/super.png)no-repeat center/cover;
+          }
+          &.yes24_th{
+            background: url(../images/thmb/yes24.png)no-repeat center/cover;
+          }
+          &.ace_th{
+            background: url(../images/thmb/acebed.png)no-repeat center/cover;
+          }
+          &.jwe_th{
+            background: url(../images/thmb/jwe.png)no-repeat center/cover;
+          }
+          &.auntie_th{
+            background: url(../images/thmb/auntie.png)no-repeat center/cover;
+          }
+          &.stx_th{
+            background: url(../images/thmb/stx.png)no-repeat center/cover;
+          }
+          &.fss_th{
+            background: url(../images/thmb/fursys.png)no-repeat center/cover;
+          }
+          &.wd_th{
+            background: url(../images/thmb/woodam.png)no-repeat center/cover;
+          }
+          &.mogo_th{
+            background: url(../images/thmb/mugo.png)no-repeat center/cover;
+          }
+          &.br_th{
+            background: url(../images/thmb/br.png)no-repeat center/cover;
+          }
+          &.tbr_th{
+            background: url(../images/thmb/tamburins.png)no-repeat center/cover;
+          }
+          &.sabon_th{
+            background: url(../images/thmb/sabon.png)no-repeat center/cover;
+          }
+          &.dior_th{
+            background: url(../images/thmb/dior.png)no-repeat center/cover;
+          }
+          &.nd_th{
+            background: url(../images/thmb/newdin.png)no-repeat center/cover;
+          }
+          &.inch_th{
+            background: url(../images/thmb/incheon.png)no-repeat center/cover;
+          }
+          &.artisee_th{
+            background: url(../images/thmb/artisee.png)no-repeat center/cover;
+          }
+          &.bnf_th{
+            background: url(../images/thmb/benefit.png)no-repeat center/cover;
           }
         }
       }
@@ -360,8 +485,18 @@ b{
 
 }
 @media screen and (max-width:720px) {
+  #sct1 .txtBox a{
+    font-size: 40px;
+  }
+  #sct2 .workSlide .work-swiper .workwrap{
+    border: none;
+  }
+  #sct2 .workSlide .work-swiper .workwrap p{
+    transform: translateY(-1%);
+  }
   #sct2 .workSlide .work-swiper .workwrap p span.num{
     font-size: 13vw;
+    -webkit-text-fill-color: #ffffff;
   }
   ul.bar{
     grid-template-columns: repeat(2, 1fr);
@@ -372,5 +507,29 @@ b{
         height: 100px;
       }
     }
+  }
+}
+
+@media screen and (max-width:500px){
+  header nav ul li a{
+    font-size: 16px;
+  }
+
+  #sct2 .workSlide .work-swiper .workwrap.on p{
+    transform: unset;
+  }
+  #sct2 .workSlide .work-swiper .workwrap p{
+    flex-direction: column;
+    transform: unset;
+    padding: 0 20px 4.5%;
+    align-items: flex-start;
+    gap: 10px;
+
+    span.tBox{
+      height: 100px;
+    }
+  }
+  #sct2 .workSlide .work-swiper .swiper-slide{
+    padding: 0 20px;
   }
 }
