@@ -736,11 +736,9 @@ video#myVideo2 {
 }
 
 ul.bar {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
-  justify-content: center;
-  align-items: center;
 }
 ul.bar li {
   text-align: center;
@@ -824,8 +822,30 @@ b {
   display: inline-block;
 }
 
+@media screen and (max-width: 1024px) {
+  .bar_wrap {
+    justify-content: center;
+  }
+  ul.bar {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  ul.bar li .progress {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+  }
+}
 @media screen and (max-width: 720px) {
   #sct2 .workSlide .work-swiper .workwrap p span.num {
     font-size: 13vw;
+  }
+  ul.bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  ul.bar li .progress {
+    width: 100px;
+    height: 100px;
   }
 }/*# sourceMappingURL=default.css.map */
