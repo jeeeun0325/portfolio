@@ -63,6 +63,7 @@ window.onload = function() {
 // work slide
 var swiper2 = new Swiper(".work-swiper", {
   slidesPerView:1.1,
+  spaceBetween: 25,
     pagination: {
         el: "swiper-pagination",
         type: "fraction",
@@ -85,23 +86,27 @@ var swiper2 = new Swiper(".work-swiper", {
       breakpoints: {
         501: {
           slidesPerView:1.3,
-    spaceBetween: 5,
+    spaceBetween: 25,
         },
-      1023: {
+        801: {
+          slidesPerView:1.5,
+    spaceBetween: 35,
+        },
+      1025: {
         slidesPerView:2,
-  spaceBetween: 10,
+  spaceBetween: 40,
       },
       1200: {
         slidesPerView:2.5,
-  spaceBetween: 10,
+  spaceBetween: 40,
       },
       1500: {
         slidesPerView:3,
-  spaceBetween: 10,
+  spaceBetween: 40,
       },
       3000: {
         slidesPerView:4,
-  spaceBetween: 10,
+  spaceBetween: 40,
       },
     },
 });

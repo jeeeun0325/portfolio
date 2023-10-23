@@ -434,6 +434,9 @@ b {
   }
 }
 @media screen and (max-width: 1024px) {
+  header {
+    height: 70px;
+  }
   footer .container {
     flex-direction: column;
     padding: 48px 0;
@@ -602,9 +605,9 @@ video#myVideo2 {
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
+  padding: 0 39px;
 }
 #sct2 .workSlide .work-swiper .swiper-slide {
-  padding: 0 40px;
   max-width: 600px;
 }
 #sct2 .workSlide .work-swiper .swiper-slide.swiper-slide-next .workwrap {
@@ -680,6 +683,7 @@ video#myVideo2 {
 #sct2 .workSlide .work-swiper .workwrap .hoverdir .work_thm img {
   position: absolute;
   width: 100%;
+  height: 100%;
 }
 #sct2 .workSlide .work-swiper .workwrap .hoverdir .work_thm .dim {
   position: absolute;
@@ -698,7 +702,7 @@ video#myVideo2 {
 }
 #sct2 .workSlide .work-swiper .workwrap.on {
   border: none;
-  box-shadow: 25px 25px 20px 10px rgba(0, 0, 0, 0.3137254902);
+  box-shadow: 15px 25px 20px 10px rgba(0, 0, 0, 0.3137254902);
 }
 #sct2 .workSlide .work-swiper .workwrap.on p {
   transform: translateY(-1%);
@@ -952,19 +956,53 @@ b {
   ul.bar {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    padding: 70px 0;
   }
   ul.bar li .progress {
     width: 120px;
     height: 120px;
     margin: 0 auto 20px;
   }
+  .abt_wrap {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .abt_wrap .abtimg_wrap {
+    width: 100%;
+    display: flex;
+  }
+  .abt_wrap .abtimg_wrap .abt_img {
+    width: 50%;
+    height: 70vh;
+  }
+  .abt_wrap .abtimg_wrap .abt_img02 {
+    width: 50%;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  #sct2 .workSlide .work-swiper {
+    padding: 0 24px;
+  }
 }
 @media screen and (max-width: 720px) {
   #sct1 .txtBox a {
     font-size: 40px;
   }
+  #sct2 .workSlide .work-swiper .swiper-slide-active .workwrap {
+    box-shadow: 15px 25px 20px 10px rgba(0, 0, 0, 0.3137254902);
+  }
   #sct2 .workSlide .work-swiper .workwrap {
     border: none;
+  }
+  #sct2 .workSlide .work-swiper .workwrap::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2196078431);
+    top: 0;
+    left: 0;
   }
   #sct2 .workSlide .work-swiper .workwrap p {
     transform: translateY(-1%);
@@ -980,6 +1018,17 @@ b {
   ul.bar li .progress {
     width: 100px;
     height: 100px;
+  }
+  .abt_wrap .abtimg_wrap {
+    flex-wrap: wrap;
+  }
+  .abt_wrap .abtimg_wrap .abt_img {
+    width: 100%;
+    height: 70vh;
+  }
+  .abt_wrap .abtimg_wrap .abt_img02 {
+    width: 100%;
+    height: 70vh;
   }
 }
 @media screen and (max-width: 500px) {
@@ -998,8 +1047,5 @@ b {
   }
   #sct2 .workSlide .work-swiper .workwrap p span.tBox {
     height: 100px;
-  }
-  #sct2 .workSlide .work-swiper .swiper-slide {
-    padding: 0 20px;
   }
 }/*# sourceMappingURL=default.css.map */

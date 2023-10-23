@@ -99,8 +99,8 @@ video{
  overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
+    padding: 0 39px;
       .swiper-slide {
-        padding: 0 40px;
         max-width: 600px;
         // min-height: 400px;
 
@@ -181,6 +181,7 @@ video{
             img{
               position: absolute;
               width: 100%;
+              height: 100%;
             }
             .dim{
               position: absolute;
@@ -203,7 +204,7 @@ video{
         }
         &.on{
           border: none;
-          box-shadow:25px 25px 20px 10px #00000050 ;
+          box-shadow:15px 25px 20px 10px #00000050 ;
           p{
             transform: translateY(-1%);
             span{
@@ -474,6 +475,7 @@ b{
   ul.bar{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    padding: 70px 0;
     li{
       .progress{
         width: 120px;
@@ -482,15 +484,54 @@ b{
       }
     }
   }
+  .abt_wrap{
+    width: 100%;
+    flex-wrap: wrap;
+    .abtimg_wrap{
+      width: 100%;
+      display: flex; 
+      .abt_img{
+      width: 50%;
+      height: 70vh;
+    }
+    .abt_img02{
+      width: 50%;
+      height: 70vh;
+    }
+    }
+   
+  }
 
+}
+
+@media screen and (max-width:800px){
+  #sct2 .workSlide .work-swiper{
+    padding: 0 24px;
+  }
+  
 }
 @media screen and (max-width:720px) {
   #sct1 .txtBox a{
     font-size: 40px;
   }
+  #sct2 .workSlide .work-swiper .swiper-slide-active .workwrap{
+    box-shadow:15px 25px 20px 10px #00000050 ;
+  }
   #sct2 .workSlide .work-swiper .workwrap{
     border: none;
+    &::after{
+      content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: #00000038;
+     top: 0;
+     left: 0;
+    }
   }
+  // #sct2 .workSlide .work-swiper .workwrap.on{
+  //   box-shadow: none;
+  // }
   #sct2 .workSlide .work-swiper .workwrap p{
     transform: translateY(-1%);
   }
@@ -508,13 +549,29 @@ b{
       }
     }
   }
+  .abt_wrap{
+    .abtimg_wrap{
+      flex-wrap: wrap;
+      .abt_img{
+      width: 100%;
+      height: 70vh;
+    }
+    .abt_img02{
+      width: 100%;
+      height: 70vh;
+    }
+    }
+    
+  }
+
+
 }
 
 @media screen and (max-width:500px){
   header nav ul li a{
     font-size: 16px;
   }
-
+  
   #sct2 .workSlide .work-swiper .workwrap.on p{
     transform: unset;
   }
@@ -528,8 +585,5 @@ b{
     span.tBox{
       height: 100px;
     }
-  }
-  #sct2 .workSlide .work-swiper .swiper-slide{
-    padding: 0 20px;
   }
 }
