@@ -30,7 +30,7 @@ nav{width: 50px;height: 100vh;background: #fff;}
 .mainSlide{width: 800px;height: 830px;display: flex;}
 .mySwiper .swiper-slide{width: 750px;height: 830px;}
 .swiper-slide .summary{position: absolute;left: 20px;top: 20px;}
-.mySwiper .swiper-slide:nth-child(1){background-image: url(./img/mainBanner1bg1.png);}
+.mySwiper .swiper-slide:nth-child(1){background-image: url(./img/mainbanner1bg1.png);}
 .mySwiper .swiper-slide:nth-child(2){background-image: url(./img/mainbanner2bg1.png);}
 .mySwiper .swiper-slide:nth-child(3){background-image: url(./img/mainbanner3bg1.png);}
 .mySwiper .swiper-slide:nth-child(4){background-image: url(./img/mainbanner4bg1.png);}
