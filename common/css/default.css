@@ -926,11 +926,15 @@ svg {
 }
 .abt_wrap .abt_txt {
   width: 50%;
+  background: #000;
 }
 .abt_wrap .abt_txt .abt_me {
-  margin: auto;
-  padding-top: 10%;
+  margin: 10% auto;
+  padding: 30px;
   width: 70%;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  color: #fff;
 }
 .abt_wrap .abt_txt .abt_me .abt_title {
   display: block;
@@ -978,6 +982,9 @@ b {
   .abt_wrap .abtimg_wrap .abt_img02 {
     width: 50%;
     height: 70vh;
+  }
+  .abt_wrap .abt_txt {
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {

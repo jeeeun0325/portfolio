@@ -296,11 +296,11 @@ var bar3 = new ProgressBar.Circle(progress3, {
           bar.animate(0.9)
       bar2.animate(0.7)
       bar3.animate(0.7)
-      bar4.animate(0.4)
+      bar4.animate(0.5)
       bar5.animate(0.8)
       bar6.animate(0.8)
       bar7.animate(0.7)
-      bar8.animate(0.5)
+      bar8.animate(0.6)
         } else{
           bar.animate(0)
       bar2.animate(0)
