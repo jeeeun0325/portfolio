@@ -110,35 +110,6 @@ b{
   header{
     height: 70px;
   }
-  footer {
-    .container{
-      flex-direction: column;        
-      padding: 48px 0;
-
-      .ft_logo{
-        flex-direction: column;
-        ul{
-          padding: 24px 0;
-          margin: 0;
-          flex-direction: column;
-          gap: 8px;
-          li{
-            padding: 0;
-            &:last-child{
-              padding-left: 0;
-            }
-            &::before{
-              display: none;
-            }
-          }
-        }
-      }
-      p{
-        width: 207px;
-        text-align: center;
-      }
-    }
-  }
  
 }
 

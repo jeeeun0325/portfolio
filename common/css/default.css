@@ -437,32 +437,6 @@ b {
   header {
     height: 70px;
   }
-  footer .container {
-    flex-direction: column;
-    padding: 48px 0;
-  }
-  footer .container .ft_logo {
-    flex-direction: column;
-  }
-  footer .container .ft_logo ul {
-    padding: 24px 0;
-    margin: 0;
-    flex-direction: column;
-    gap: 8px;
-  }
-  footer .container .ft_logo ul li {
-    padding: 0;
-  }
-  footer .container .ft_logo ul li:last-child {
-    padding-left: 0;
-  }
-  footer .container .ft_logo ul li::before {
-    display: none;
-  }
-  footer .container p {
-    width: 207px;
-    text-align: center;
-  }
 }
 @media screen and (max-width: 720px) {
   header .container {
@@ -835,6 +809,9 @@ video#myVideo2 {
 #sct2 .workSlide .work-swiper .workwrap.mob_bg.bnf_th {
   background: url(../images/thmb/benefit.png) no-repeat center/cover;
 }
+#sct2 .workSlide .work-swiper .workwrap.noho {
+  cursor: default;
+}
 #sct2 .work-swiper img {
   width: 100%;
   border-radius: 10px;
@@ -947,6 +924,10 @@ svg {
 }
 .abt_wrap .abt_txt .abt_me ul li {
   font-size: 18px;
+  padding-bottom: 20px;
+}
+.abt_wrap .abt_txt .abt_me ul li span {
+  display: block;
 }
 
 b {
