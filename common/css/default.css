@@ -542,6 +542,26 @@ video#myVideo2 {
   opacity: 0.7;
 }
 
+.scr {
+  width: 42px;
+  height: 70px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/ico_scroll.png) center;
+  animation: bounce 1s linear infinite alternate;
+  transform-origin: center bottom;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
 #sct2 {
   position: relative;
 }
@@ -591,12 +611,15 @@ video#myVideo2 {
 #sct2 .workSlide .work-swiper .slide_btn_wrap {
   position: absolute;
   height: 70px;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15%;
+  z-index: 30;
+}
+#sct2 .workSlide .work-swiper .slide_btn_wrap .slide_btn {
   display: flex;
   justify-content: center;
   gap: 40px;
-  bottom: 15%;
-  z-index: 30;
 }
 #sct2 .workSlide .work-swiper .slide_btn_wrap .prev_btn {
   width: 70px;

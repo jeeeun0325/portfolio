@@ -62,6 +62,21 @@ video{
         opacity: .7;
       }
 }
+.scr{
+  width:42px;
+  height: 70px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/ico_scroll.png)center;
+  animation: bounce 1s  linear infinite alternate;
+    transform-origin: center bottom;
+}
+@keyframes bounce {
+  from{transform: translateY(0);}
+    to{transform: translateY(20px);}
+  } 
 #sct2 {
   position: relative;
 .container{
@@ -115,12 +130,15 @@ video{
       .slide_btn_wrap{
         position: absolute;
         height: 70px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 40px;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 15%;
         z-index: 30;
+        .slide_btn{
+          display: flex;
+        justify-content: center;
+        gap: 40px;
+        }
         .prev_btn{
           width: 70px;
           height: 70px;
