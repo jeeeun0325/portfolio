@@ -945,9 +945,18 @@ svg {
 .abt_wrap .abt_txt .abt_me P {
   font-size: 18px;
 }
+.abt_wrap .abt_txt .abt_me > p {
+  padding-bottom: 20px;
+}
+.abt_wrap .abt_txt .abt_me ul {
+  padding-bottom: 20px;
+}
 .abt_wrap .abt_txt .abt_me ul li {
   font-size: 18px;
   padding-bottom: 20px;
+}
+.abt_wrap .abt_txt .abt_me ul li:last-child {
+  padding-bottom: 0;
 }
 .abt_wrap .abt_txt .abt_me ul li span {
   display: block;
