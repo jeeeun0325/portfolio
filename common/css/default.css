@@ -953,6 +953,36 @@ svg {
   display: block;
 }
 
+.career li p {
+  position: relative;
+  padding-left: 15px;
+}
+.career li p::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.career li span {
+  position: relative;
+  padding-left: 20px;
+}
+.career li span::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1px;
+  background: #fff;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 b {
   display: inline-block;
 }

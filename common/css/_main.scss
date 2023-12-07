@@ -492,7 +492,38 @@ svg{stroke-linecap:round}
   }
 }
 
-
+.career{
+  li{
+    p{position: relative;
+      padding-left: 15px;
+      &::before{
+        position: absolute;
+        content: '';
+        width: 4px;
+        height: 4px;
+        background:#fff;
+        border-radius: 50%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    span{
+      position: relative;
+      padding-left: 20px;
+      &::before{
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 1px;
+        background: #fff;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
 b{
   display: inline-block;
 }
