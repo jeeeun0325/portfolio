@@ -901,6 +901,7 @@ svg {
 }
 .abt_wrap .abtimg_wrap {
   width: 50%;
+  background: #000;
 }
 .abt_wrap .abt_img {
   height: 100vh;
