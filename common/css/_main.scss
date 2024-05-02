@@ -74,8 +74,8 @@ video{
     transform-origin: center bottom;
 }
 @keyframes bounce {
-  from{transform: translateY(0);}
-    to{transform: translateY(20px);}
+  from{transform: translate(-50%, 0);}
+    to{transform: translate(-50%, 20px);}
   } 
 #sct2 {
   position: relative;
