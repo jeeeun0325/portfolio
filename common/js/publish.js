@@ -316,7 +316,14 @@ var bar3 = new ProgressBar.Circle(progress3, {
   });
 
   $(document).ready(function(){
-
+    let wid=$(this).width()
+    if(wid>720){
+      $('#da-thumbs .workwrap').hoverdir();
+      $('#da-thumbs .workwrap').removeClass('mob_bg')
+    }else{
+      $('#da-thumbs .workwrap').hoverdir('destroy');
+      $('#da-thumbs .workwrap').addClass('mob_bg')
+    }
     $(window).resize(function(){
       let wid=$(this).width()
       if(wid>1024){
