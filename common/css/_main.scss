@@ -29,7 +29,7 @@
     gap: 190px;
     align-items: center;
     justify-content: center;
-
+    
     .txtBox {
       position: relative;
       width: 100%;
@@ -106,6 +106,7 @@
     .txtBox2 {
       width: 100%;
       font-size: 25px;
+      z-index: 10;
 
       span {
         opacity: 0;
@@ -943,6 +944,7 @@ b {
 @media screen and (max-width:720px) {
   #sct1 {
     .txtBoxWrap {
+      padding: 120px 30px;
       .txtBox {
         font-size: 60px;
       }
@@ -989,8 +991,8 @@ b {
 
     li {
       .progress {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
       }
     }
   }
@@ -1019,7 +1021,12 @@ b {
   #sct1 .scr{
     display: none;
   }
-
+  #sct1 .txtBoxWrap .txtBox{
+    font-size: 45px;
+  }
+  #sct1 .txtBoxWrap .txtBox2{
+    font-size: 19px;
+  }
   #sct2 .workSlide .work-swiper .workwrap.on p {
     transform: unset;
   }
