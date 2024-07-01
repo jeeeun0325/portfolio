@@ -1279,16 +1279,10 @@ b {
   .abt_wrap .abtimg_wrap .abt_img img {
     width: 60%;
   }
+  #sct5 {
+    height: 70vh;
+  }
 }
-.scroll {
-  font-size: 50px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  z-index: 999;
-}
-
 @media screen and (max-width: 500px) {
   header nav ul li a {
     font-size: 16px;
@@ -1314,6 +1308,9 @@ b {
   }
   #sct2 .workSlide .work-swiper .workwrap p span.tBox {
     height: 100px;
+  }
+  ul.bar {
+    gap: 10px;
   }
   #sct5.active .contact {
     font-size: 70px;
