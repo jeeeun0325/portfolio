@@ -29,7 +29,7 @@ $(window).scroll(function () {
   let winH = $(window).height()
   let winW = $(window).outerWidth()
   let secTop = $('#sct5').offset().top
- console.log(winH * 2 - winH / 2, scrTop, winH * 3)
+ //console.log(winW, winH , scrTop)
 
   if (scrTop >= winH * 0 && scrTop < winH * 1) {
 
@@ -261,8 +261,8 @@ var bar = new ProgressBar.Circle(progress1, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },/* #b7e7f0 */
   to: { color: '#a3d6df;', a: 1 },
@@ -277,8 +277,8 @@ var bar2 = new ProgressBar.Circle(progress2, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },
   to: { color: '#a3d6df;', a: 1 },
@@ -293,8 +293,8 @@ var bar3 = new ProgressBar.Circle(progress3, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },
   to: { color: '#a3d6df', a: 1 },
@@ -309,8 +309,8 @@ var bar4 = new ProgressBar.Circle(progress4, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },
   to: { color: '#a3d6df', a: 1 },
@@ -325,8 +325,8 @@ var bar5 = new ProgressBar.Circle(progress5, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },
   to: { color: '#a3d6df', a: 1 },
@@ -341,8 +341,8 @@ var bar6 = new ProgressBar.Circle(progress6, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },
   to: { color: '#a3d6df', a: 1 },
@@ -357,8 +357,8 @@ var bar7 = new ProgressBar.Circle(progress7, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },
   to: { color: '#a3d6df', a: 1 },
@@ -373,8 +373,8 @@ var bar8 = new ProgressBar.Circle(progress8, {
   color: '#d1cdfa',
   trailColor: '#eee',
   trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
+  duration: 500,
+  easing: 'linear',
   strokeWidth: 8,
   from: { color: '#7569cf', a: 0 },
   to: { color: '#a3d6df', a: 1 },/* #7569cf */
