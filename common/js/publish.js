@@ -29,7 +29,7 @@ $(window).scroll(function () {
   let winH = $(window).height()
   let winW = $(window).outerWidth()
   let secTop = $('#sct5').offset().top
-  //console.log(winH, winW)
+ console.log(winH * 2 - winH / 2, scrTop, winH * 3)
 
   if (scrTop >= winH * 0 && scrTop < winH * 1) {
 
@@ -47,9 +47,11 @@ $(window).scroll(function () {
     $('nav li').eq(3).addClass('active')
   }
   if (scrTop >= winH * 2 && scrTop < winH * 2 + winW) {
-
     $('nav li').removeClass()
     $('nav li').eq(2).addClass('active')
+  } 
+
+  if (scrTop >= winH * 2 - (winH / 2) && scrTop < winH * 2 + winW) {
     bar.animate(0.9)
     bar2.animate(0.7)
     bar3.animate(0.7)
@@ -58,8 +60,8 @@ $(window).scroll(function () {
     bar6.animate(0.8)
     bar7.animate(0.7)
     bar8.animate(0.5)
-  } else {
-    bar.animate(0)
+  }else{
+     bar.animate(0)
     bar2.animate(0)
     bar3.animate(0)
     bar4.animate(0)
@@ -69,6 +71,7 @@ $(window).scroll(function () {
     bar8.animate(0)
   }
 
+
   if (scrTop >= winH * 2 + winW + winH / 3) {
     $('#sct5').addClass('active')
   } else {
@@ -77,9 +80,11 @@ $(window).scroll(function () {
 
   if (winW < 1024) {
     if (scrTop >= winH * 2 && scrTop < winH * 3) {
-
       $('nav li').removeClass()
       $('nav li').eq(2).addClass('active')
+    } 
+
+    if(scrTop >= winH * 2 - (winH / 2) && scrTop < winH * 3){
       bar.animate(0.9)
       bar2.animate(0.7)
       bar3.animate(0.7)
@@ -88,7 +93,7 @@ $(window).scroll(function () {
       bar6.animate(0.8)
       bar7.animate(0.7)
       bar8.animate(0.5)
-    } else {
+    }else{
       bar.animate(0)
       bar2.animate(0)
       bar3.animate(0)
@@ -104,7 +109,7 @@ $(window).scroll(function () {
       $('nav li').eq(3).addClass('active')
     }
 
-    if (scrTop >= secTop - winH / 2) {
+    if (scrTop >= secTop - winH / 1.2) {
       $('#sct5').addClass('active')
     } else {
       $('#sct5').removeClass('active')

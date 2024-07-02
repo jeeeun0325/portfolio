@@ -1025,7 +1025,7 @@ b {
     display: none;
   }
   #sct1 .txtBoxWrap .txtBox{
-    font-size: 45px;
+    font-size: 37px;
   }
   #sct1 .txtBoxWrap .txtBox2{
     font-size: 19px;
@@ -1049,6 +1049,9 @@ b {
     gap: 10px;
   }
   #sct5.active .contact{
-    font-size: 70px;
+    font-size: 65px;
+  }
+  #sct5.active div span{
+    font-size: 22px;
   }
 }
