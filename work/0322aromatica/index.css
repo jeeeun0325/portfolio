@@ -67,9 +67,9 @@ nav ul li{margin-right: 30px;}
 .productInner li figure{border: 5px solid transparent;}
 .productInner span{font-size: 12px;text-align: center;display: block;padding: 10px 0;}
 .btn{padding:20px 0 10px;}
-.btn ul{display: flex;justify-content: center;}
-.btn ul li{width: 25%;text-align: center;}
-.btn ul li a{display: block;}
+.btn ul{display: flex;justify-content: center;gap: 20px;}
+.btn ul li{width: 25%;text-align: center; }
+.btn ul li a{display: block;padding: 20px; color: #eee;font-weight: 600;background: #085815;border-radius: 20px;}
 
 
 .arrow{position: absolute;width: 30px;height: 30px;top:50%;transform: translateY(-50%);}
