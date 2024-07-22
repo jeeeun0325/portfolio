@@ -62,7 +62,7 @@ nav ul li{margin-right: 30px;}
 .productDetail ul li h3.name{font-size: 18px;font-weight: 600;padding-bottom: 10px;}
 .productDetail ul li p.price{font-size: 16px;color: #4a6a53;font-weight: 600;;padding-bottom: 10px;}
 .desc ul li p.detail{font-size: 16px;color: #888;font-weight: 500;;padding-bottom: 30px;}
-.productInner h3{font-size: 17px;padding-bottom: 20px;}
+.productInner h3{font-size: 17px;padding-bottom: 20px;font-weight: 600;}
 .productInner li.on figure{border: 5px solid #f3f0eb;;}
 .productInner li figure{border: 5px solid transparent;}
 .productInner span{font-size: 12px;text-align: center;display: block;padding: 10px 0;}
